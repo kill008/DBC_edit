@@ -1,0 +1,1862 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU Tester TEL OPC IPS GWM GCU DCU BMS ACU
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ DCU_TEL_BattCurr : 0|16@0+ (0.1,-1000) [-1000|1000] "A" Vector__XXX
+ SG_ DCU_4WDCurrActAmend2 : 0|16@0+ (0.1,-1000) [-1000|1000] "A" Vector__XXX
+ SG_ DCU_2WDCurrActAmend : 0|16@0+ (0.1,-1000) [-1000|1000] "A" Vector__XXX
+ SG_ DCU_TEL_ModeSt : 0|3@0+ (1,0) [0|7] "-" Vector__XXX
+ SG_ DCU_DataNo2 : 0|8@0+ (1,0) [0|255] "-" Vector__XXX
+ SG_ DCU_TEL_StatTemp : 0|8@0+ (1,-40) [-40|215] "deg" Vector__XXX
+ SG_ DCU_TEL_TorqAct : 0|16@0+ (0.1,-2000) [-2000|4553.5] "Nm" Vector__XXX
+ SG_ DCU_TEL_RotSpdAct : 0|16@0+ (1,-20000) [-20000|45535] "rpm" Vector__XXX
+ SG_ DCU_TEL_InvtTemp : 0|8@0+ (1,-40) [-40|215] "deg" Vector__XXX
+ SG_ DCU_MotorNumTotal : 0|3@0+ (1,0) [0|7] "-" Vector__XXX
+ SG_ DCU_MotTempOvrErr : 0|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ DCU_ECUTempOvrErr : 0|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ DCU_MotorNumOrder : 0|3@0+ (1,0) [0|7] "-" Vector__XXX
+ SG_ DCU_DataNo1 : 0|8@0+ (1,0) [0|255] "-" Vector__XXX
+ SG_ VCU_MTCoolantWPSpdPMWSet : 0|7@0+ (1,0) [0|100] "%" Vector__XXX
+ SG_ VCU_MTWaterPumpFault : 0|1@0+ (1,0) [0|1] "-" Vector__XXX
+
+BO_ 2020 DCU_Phys_Diag_Rx: 8 Tester
+ SG_ DCU_Diag_Request : 7|64@0+ (1,0) [0|0] "-"  DCU
+
+BO_ 1509 GCU_NM: 8 GCU
+ SG_ GCU_NMDataField2 : 39|32@0+ (1,0) [0|0] "-"  TEL,VCU,IPS,OPC,DCU,BMS,GWM
+ SG_ GCU_SubNetWakeRq : 31|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,OPC,DCU,BMS,GWM
+ SG_ GCU_NMWakeupOrignin : 23|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,OPC,DCU,BMS,GWM
+ SG_ GCU_NMDataField1 : 15|8@0+ (1,0) [0|0] "-"  TEL,VCU,IPS,OPC,DCU,BMS,GWM
+ SG_ GCU_NodeAddress : 7|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,OPC,DCU,BMS,GWM
+
+BO_ 1506 BMS_NM: 8 BMS
+ SG_ BMS_NMDataField2 : 39|32@0+ (1,0) [0|0] "-"  TEL,VCU,IPS,OPC,DCU,GCU,GWM
+ SG_ BMS_SubNetWakeRq : 31|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,OPC,DCU,GCU,GWM
+ SG_ BMS_NMWakeupOrignin : 23|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,OPC,DCU,GCU,GWM
+ SG_ BMS_NMDataField1 : 15|8@0+ (1,0) [0|0] "-"  TEL,VCU,IPS,OPC,DCU,GCU,GWM
+ SG_ BMS_NodeAddress : 7|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,OPC,DCU,GCU,GWM
+
+BO_ 1507 VCU_NM_ECAN: 8 VCU
+ SG_ VCU_NMDataField2_E : 39|32@0+ (1,0) [0|0] "-"  TEL,IPS,OPC,DCU,GCU,BMS,GWM
+ SG_ VCU_SubNetWakeRq_E : 31|8@0+ (1,0) [0|255] "-"  TEL,IPS,OPC,DCU,GCU,BMS,GWM
+ SG_ VCU_NMWakeupOrignin_E : 23|8@0+ (1,0) [0|255] "-"  TEL,IPS,OPC,DCU,GCU,BMS,GWM
+ SG_ VCU_NMDataField1_E : 15|8@0+ (1,0) [0|0] "-"  TEL,IPS,OPC,DCU,GCU,BMS,GWM
+ SG_ VCU_NodeAddress_E : 7|8@0+ (1,0) [0|255] "-"  TEL,IPS,OPC,DCU,GCU,BMS,GWM
+
+BO_ 1510 IPS_NM: 8 IPS
+ SG_ IPS_NMDataField2 : 39|32@0+ (1,0) [0|0] "-"  TEL,VCU,OPC,DCU,GCU,BMS,GWM
+ SG_ IPS_SubNetWakeRq : 31|8@0+ (1,0) [0|255] "-"  TEL,VCU,OPC,DCU,GCU,BMS,GWM
+ SG_ IPS_NMWakeupOrignin : 23|8@0+ (1,0) [0|255] "-"  TEL,VCU,OPC,DCU,GCU,BMS,GWM
+ SG_ IPS_NMDataField1 : 15|8@0+ (1,0) [0|0] "-"  TEL,VCU,OPC,DCU,GCU,BMS,GWM
+ SG_ IPS_NodeAddress : 7|8@0+ (1,0) [0|255] "-"  TEL,VCU,OPC,DCU,GCU,BMS,GWM
+
+BO_ 633 GW_EMS_6_E: 8 GWM
+ SG_ EMS_EngSpd : 47|16@0+ (1,0) [0|65535] "rpm"  DCU,GCU
+ SG_ EMS_EngIdleRefSpd : 31|8@0+ (10,0) [0|2500] "rpm"  DCU,GCU
+ SG_ EMS_EngSpdVD : 21|1@0+ (1,0) [0|1] ""  DCU,GCU
+
+BO_ 822 GW_EMS_1_E: 8 GWM
+ SG_ EMS_EngWaterTempVD : 14|1@0+ (1,0) [0|1] ""  IPS,DCU,GCU,BMS
+ SG_ EMS_OBDWarmUpCycleSt : 13|1@0+ (1,0) [0|1] "-"  IPS,DCU,GCU,BMS
+ SG_ EMS_EngWaterTemp : 7|8@0+ (1,-40) [-40|214] "°„C"  IPS,DCU,GCU,BMS
+
+BO_ 878 GW_EMS_2_E: 8 GWM
+ SG_ EMS_EngRunningTime : 47|8@0+ (1,0) [0|200] "s"  IPS,DCU,GCU,BMS
+ SG_ EMS_MTValvePINDiagFault : 9|2@0+ (1,0) [0|3] "-"  VCU,DCU,GCU
+ SG_ EMS_VCU_MTValveReqSt : 7|1@0+ (1,0) [0|1] "-"  VCU,DCU,GCU
+
+BO_ 926 TEL_3_E: 8 TEL
+ SG_ TEL_Time_Sec : 27|6@0+ (1,0) [0|59] "s"  VCU,IPS,DCU,GCU,BMS
+ SG_ TEL_Time_Min : 17|6@0+ (1,0) [0|59] "min"  VCU,IPS,DCU,GCU,BMS
+ SG_ TEL_Time_Day : 11|5@0+ (1,0) [1|31] "d"  VCU,IPS,DCU,GCU,BMS
+ SG_ TEL_Time_Hour : 22|5@0+ (1,0) [0|23] "h"  VCU,IPS,DCU,GCU,BMS
+ SG_ TEL_Time_Month : 15|4@0+ (1,0) [1|12] "m"  VCU,IPS,DCU,GCU,BMS
+ SG_ TEL_Time_Year : 7|8@0+ (1,2000) [2000|2255] "y"  VCU,IPS,DCU,GCU,BMS
+
+BO_ 122 OPC_3: 8 OPC
+ SG_ OPC_GCUResolverValue : 10|13@0+ (0.001,0) [0|6.28] "degC"  DCU
+ SG_ OPC_DCUResolverValue : 7|13@0+ (0.001,0) [0|6.28] "degC"  DCU
+
+BO_ 678 BMS_1: 8 BMS
+ SG_ BMS_1_Checksum : 63|8@0+ (1,0) [0|255] "-"  VCU,IPS,DCU,GCU
+ SG_ BMS_1_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  VCU,IPS,DCU,GCU
+ SG_ BMS_PwrDwnReq : 47|1@0+ (1,0) [0|1] "-"  VCU,IPS,DCU,GCU,GWM
+ SG_ BMS_DCUBattSt : 46|1@0+ (1,0) [0|1] "-"  DCU,GCU
+ SG_ BMS_BattVolt : 17|10@0+ (1,0) [0|600] "V"  TEL,VCU,DCU,GCU,GWM
+ SG_ BMS_BattCurr : 7|16@0+ (0.1,-1000) [-1000|1000] "A"  TEL,VCU,DCU,GWM
+
+BO_ 885 GW_BCM_2_E: 8 GWM
+ SG_ BCM_KeySt : 9|2@0+ (1,0) [0|3] ""  Tester,TEL,IPS,OPC,DCU,GCU,BMS
+
+BO_ 750 VCU_24_E: 8 VCU
+ SG_ VCU_VehStopTime : 39|9@0+ (1,0) [0|400] "min"  IPS,DCU,GCU,BMS,GWM
+ SG_ VCU_DriveCycleSt : 46|2@0+ (1,0) [0|3] "-"  IPS,DCU,GCU,BMS,GWM
+ SG_ VCU_VehAltitude : 20|13@0+ (1,-90) [0|8100] "m"  IPS,DCU,GCU,BMS,GWM
+ SG_ VCU_SubEngWarmUPCycle : 21|1@0+ (1,0) [0|1] "-"  IPS,DCU,GCU,BMS
+ SG_ VCU_VehRunningTime : 15|10@0+ (1,0) [0|800] "s"  IPS,DCU,GCU,BMS,GWM
+ SG_ VCU_VehIdleRunningTime : 7|8@0+ (1,0) [0|200] "s"  IPS,DCU,GCU,BMS,GWM
+
+BO_ 442 VCU_23_E: 8 VCU
+ SG_ VCU_ClutchEngagedSt : 31|2@0+ (1,0) [0|3] "-"  DCU,GCU,GWM
+
+BO_ 680 VCU_5_E: 8 VCU
+ SG_ VCU_5_E_Checksum : 63|8@0+ (1,0) [0|255] "-"  IPS,DCU,GCU,BMS
+ SG_ VCU_5_E_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  IPS,DCU,GCU,BMS
+ SG_ VCU_GMC3To2ValveEn : 47|2@0+ (1,0) [0|3] ""  DCU,GCU
+ SG_ VCU_ExterTemp : 23|8@0+ (1,-40) [-40|213] "degC"  TEL,IPS,DCU,GCU,BMS,GWM
+ SG_ VCU_GMC3To2ValvePINDiagFaultSt : 15|2@0+ (1,0) [0|3] ""  DCU,GCU
+ SG_ VCU_MTWaterPumpDiagSt : 13|3@0+ (1,0) [0|7] ""  DCU,GCU
+
+BO_ 371 VCU_13_E: 8 VCU
+ SG_ VCU_13_E_Checksum : 63|8@0+ (1,0) [0|255] "-"  DCU,GCU
+ SG_ VCU_DCU_CoolantTemp : 43|8@0+ (1,-40) [-40|213] "degC"  DCU,GCU
+ SG_ VCU_13_E_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  DCU,GCU
+ SG_ VCU_DCU_MaxTorqDampgCtl : 35|8@0+ (1,0) [0|253] "Nm"  DCU
+ SG_ VCU_DCU_TorqMax : 29|10@0+ (1,0) [0|1023] "Nm"  DCU
+ SG_ VCU_DCU_MaxTorqGradient : 12|14@0+ (32,0) [0|524192] "Nm/s"  DCU
+ SG_ VCU_DCU_TorqMin : 6|10@0+ (1,-1023) [-1023|0] "Nm"  DCU
+
+BO_ 438 VCU_4_E: 8 VCU
+ SG_ VCU_4_E_Checksum : 63|8@0+ (1,0) [0|255] "-"  DCU
+ SG_ VCU_DCU_ModeReq : 55|4@0+ (1,0) [0|15] "-"  DCU
+ SG_ VCU_4_E_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  DCU
+ SG_ VCU_DCU_DampReq : 32|1@0+ (1,0) [0|1] "-"  DCU
+ SG_ VCU_DCU_TorqSet : 23|11@0+ (1,-1023) [-1023|1022] "Nm"  DCU,GWM
+ SG_ VCU_DCU_DampGain : 24|2@0+ (1,0) [0|3] "-"  DCU
+ SG_ VCU_DCU_TorqAllwd : 26|2@0+ (1,0) [0|3] "-"  DCU
+ SG_ VCU_DCU_SpdSet : 7|16@0+ (1,-32767) [-32767|32766] "rpm"  DCU
+
+BO_ 419 VCU_12_E: 8 VCU
+ SG_ VCU_12_E_Checksum : 63|8@0+ (1,0) [0|255] "-"  DCU
+ SG_ VCU_12_E_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  DCU
+ SG_ VCU_DCU_UdcMax : 39|10@0+ (1,0) [0|1021] "V"  DCU
+ SG_ VCU_DCU_UdcMin : 17|10@0+ (1,0) [0|1021] "V"  DCU
+ SG_ VCU_DCU_IdcMin : 11|10@0+ (1,-1023) [-1023|0] "A"  DCU
+ SG_ VCU_DCU_IdcMax : 6|10@0+ (1,0) [0|1023] "A"  DCU
+
+BO_ 2015 Func_Diag_Rx: 8 Tester
+ SG_ Func_Diag_Rx : 7|64@0+ (1,0) [0|0] ""  VCU,IPS,DCU,GCU,BMS
+
+BO_ 1325 TEL_NM_ECAN: 8 TEL
+ SG_ TEL_NMDataField2 : 39|32@0+ (1,0) [0|0] "-"  VCU,IPS,DCU,GCU,BMS,GWM
+ SG_ TEL_SubNetWakeRq : 31|8@0+ (1,0) [0|255] "-"  VCU,IPS,DCU,GCU,BMS,GWM
+ SG_ TEL_NMDataField1 : 15|16@0+ (1,0) [0|0] "-"  VCU,IPS,DCU,GCU,BMS,GWM
+ SG_ TEL_NodeAddress : 7|8@0+ (1,0) [0|255] "-"  VCU,IPS,DCU,GCU,BMS,GWM
+
+BO_ 1359 GWM_NM_ECAN: 8 GWM
+ SG_ GWM_NMDataField : 15|56@0+ (1,0) [0|0] ""  TEL,VCU,IPS,DCU,GCU,BMS
+ SG_ GWM_SubNetWakeRq : 31|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,DCU,GCU,BMS
+ SG_ GWM_NodeAddress : 7|8@0+ (1,0) [0|255] ""  TEL,VCU,IPS,DCU,GCU,BMS
+
+BO_ 1323 ACU_NM_ECAN: 8 ACU
+ SG_ ACU_NMDataField : 15|56@0+ (1,0) [0|0] "-"  TEL,VCU,IPS,DCU,GCU,BMS,GWM
+ SG_ ACU_NMNodeAddress : 7|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,DCU,GCU,BMS,GWM
+
+BO_ 608 GW_BCS_2_E: 8 GWM
+ SG_ BCS_VehSpd : 36|13@0+ (0.05625,0) [0|240] "km/h"  IPS,DCU,BMS
+ SG_ BCS_VehSpdVD : 37|1@0+ (1,0) [0|1] "-"  IPS,DCU,BMS
+
+BO_ 2028 DCU_Diag_Tx: 8 DCU
+ SG_ DCU_Diag_Response : 7|64@0+ (1,0) [0|0] "-"  Tester
+
+BO_ 1508 DCU_NM: 8 DCU
+ SG_ DCU_NMDataField2 : 39|32@0+ (1,0) [0|0] "-"  TEL,VCU,IPS,OPC,GCU,BMS,GWM
+ SG_ DCU_SubNetWakeRq : 31|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,OPC,GCU,BMS,GWM
+ SG_ DCU_NMWakeupOrignin : 23|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,OPC,GCU,BMS,GWM
+ SG_ DCU_NMDataField1 : 15|8@0+ (1,0) [0|0] "-"  TEL,VCU,IPS,OPC,GCU,BMS,GWM
+ SG_ DCU_NodeAddress : 7|8@0+ (1,0) [0|255] "-"  TEL,VCU,IPS,OPC,GCU,BMS,GWM
+
+BO_ 1699 DCU_DEBUG_2: 8 DCU
+ SG_ DCU_Fault4 : 55|16@0+ (1,0) [0|65535] "-" Vector__XXX
+ SG_ DCU_Fault3 : 39|16@0+ (1,0) [0|65535] "-" Vector__XXX
+ SG_ DCU_Fault2 : 23|16@0+ (1,0) [0|65535] "-" Vector__XXX
+ SG_ DCU_Fault1 : 7|16@0+ (1,0) [0|65535] "-" Vector__XXX
+
+BO_ 1693 DCU_DEBUG_1: 8 DCU
+ SG_ DCU_OffsetCalVal : 55|10@0+ (0.01,-3.14) [-3.14|3.14] "deg" Vector__XXX
+ SG_ DCU_Hwversion : 39|16@0+ (1,0) [0|255] "-" Vector__XXX
+ SG_ DCU_Swversion : 23|16@0+ (1,0) [0|65535] "-" Vector__XXX
+ SG_ DCU_ID : 7|16@0+ (1,0) [0|65535] "-" Vector__XXX
+
+BO_ 882 DCU_8: 8 DCU
+ SG_ DCU_8_Checksum : 63|8@0+ (1,0) [0|255] "-"  VCU
+ SG_ DCU_8_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  VCU
+ SG_ DCU_RepairInd : 55|1@0+ (1,0) [0|1] "-"  GWM
+ SG_ DCU_Debug_MotTempOvrErr : 54|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ DCU_Debug_InvtTempOvrErr : 53|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ DCU_EngMilLampReq : 52|1@0+ (1,0) [0|1] "-"  GWM
+ SG_ DCU_StatTemp : 24|9@0+ (1,-40) [-40|469] "deg"  TEL,VCU
+ SG_ DCU_FaultLampInd : 31|1@0+ (1,0) [0|1] "-"  TEL,GWM
+ SG_ DCU_CooltReq : 30|6@0+ (0.25,0) [0|15.5] "L/min"  VCU
+ SG_ DCU_RotTemp : 8|9@0+ (1,-40) [-40|469] "deg"  VCU
+ SG_ DCU_SysTempOvrInd : 15|1@0+ (1,0) [0|1] "-"  GWM
+ SG_ DCU_VoltageT30 : 14|6@0+ (0.5,0) [0|31.5] "V" Vector__XXX
+ SG_ DCU_InvtTemp : 7|8@0+ (1,-40) [-40|213] "deg"  TEL,VCU
+
+BO_ 385 DCU_3: 8 DCU
+ SG_ DCU_3_Checksum : 63|8@0+ (1,0) [0|255] "-" Vector__XXX
+ SG_ DCU_DiagErrCode : 44|6@0+ (1,0) [0|63] "-"  VCU
+ SG_ DCU_GateDrvSt : 54|2@0+ (1,0) [0|3] "-" Vector__XXX
+ SG_ DCU_DstActive : 52|1@0+ (1,0) [0|1] "-"  VCU
+ SG_ DCU_3_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  VCU
+ SG_ DCU_stTrqEmMin : 33|5@0+ (1,0) [0|23] "-" Vector__XXX
+ SG_ DCU_TrqWoDstC : 17|11@0+ (1,-1023) [-1023|1024] "Nm"  VCU
+ SG_ DCU_stTrqEmMax : 38|5@0+ (1,0) [0|23] "-" Vector__XXX
+ SG_ DCU_HvilSt : 19|2@0+ (1,0) [0|3] "-"  VCU,GCU
+ SG_ DCU_TorqMin : 13|10@0+ (1,-1023) [-1023|0] "Nm"  VCU
+ SG_ DCU_TorqMax : 7|10@0+ (1,0) [0|1023] "Nm"  VCU
+
+BO_ 377 DCU_2: 8 DCU
+ SG_ DCU_2_Checksum : 63|8@0+ (1,0) [0|255] "-"  VCU
+ SG_ DCU_OffsetCalInd : 54|1@0+ (1,0) [0|1] "-"  VCU
+ SG_ DCU_bReadyHV : 53|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ DCU_bDiagReq : 52|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ DCU_2_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  VCU
+ SG_ DCU_Fault5 : 21|16@0+ (1,0) [0|65535] "-" Vector__XXX
+ SG_ DCU_DiagState : 8|3@0+ (1,0) [0|7] "-" Vector__XXX
+ SG_ DCU_ErrLvl : 15|4@0+ (1,0) [0|4] "-"  VCU
+ SG_ DCU_IsgDeratSts : 11|3@0+ (1,0) [0|7] "-" Vector__XXX
+ SG_ DCU_DispDiagInfo : 7|8@0+ (1,0) [0|255] "-"  GWM
+
+BO_ 369 DCU_1: 8 DCU
+ SG_ DCU_1_Checksum : 63|8@0+ (1,0) [0|255] "-"  VCU,BMS
+ SG_ DCU_ModeSt : 55|4@0+ (1,0) [0|15] "-"  TEL,VCU,BMS
+ SG_ DCU_1_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  VCU,BMS
+ SG_ DCU_TorqAct : 34|11@0+ (1,-1023) [-1023|1024] "Nm"  TEL,VCU,GWM
+ SG_ DCU_UdcAct : 28|10@0+ (1,0) [0|1023] "V"  TEL,VCU,BMS
+ SG_ DCU_IdcAct : 23|11@0+ (1,-1023) [-1023|1024] "A"  TEL,VCU,BMS
+ SG_ DCU_RotSpdAct : 7|16@0+ (1,-32767) [-32767|32766] "rpm"  TEL,VCU,GWM
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 DCU_TEL_BattCurr "actual current of battery(BMS_BattCurr)";
+CM_ SG_ 3221225472 DCU_4WDCurrActAmend2 "actual current at HV of  second DCU (not used)";
+CM_ SG_ 3221225472 DCU_2WDCurrActAmend "actual current at HV of DCU£®by amend£©";
+CM_ SG_ 3221225472 DCU_TEL_ModeSt "Mode state for TEL ONLY";
+CM_ SG_ 3221225472 DCU_DataNo2 "DCU Data Number 2";
+CM_ SG_ 3221225472 DCU_TEL_StatTemp "Current temperature of stator";
+CM_ SG_ 3221225472 DCU_TEL_TorqAct "actual torque of drive motor";
+CM_ SG_ 3221225472 DCU_TEL_RotSpdAct "actual rotation speed of drvie motor";
+CM_ SG_ 3221225472 DCU_TEL_InvtTemp "Current temperature of inverter";
+CM_ SG_ 3221225472 DCU_MotorNumTotal "The total number of motors in the vehicle";
+CM_ SG_ 3221225472 DCU_MotTempOvrErr "The  temperature  of Motor is too high";
+CM_ SG_ 3221225472 DCU_ECUTempOvrErr "The  temperature  of ECU is too high";
+CM_ SG_ 3221225472 DCU_MotorNumOrder "The order number of motors in the vehicle (this value cannot be larger than the total number)";
+CM_ SG_ 3221225472 DCU_DataNo1 "DCU Data Number 1";
+CM_ SG_ 3221225472 VCU_MTCoolantWPSpdPMWSet "MT coolant water pump speed PMW target";
+CM_ SG_ 3221225472 VCU_MTWaterPumpFault "MT Water pump fault";
+CM_ SG_ 2020 DCU_Diag_Request "Diagnostic physical request";
+CM_ SG_ 1509 GCU_NMDataField2 "Not used,for further definition or usage.";
+CM_ SG_ 1509 GCU_NMWakeupOrignin "Origin of the wake up";
+CM_ SG_ 1509 GCU_NMDataField1 "Not used,for further definition or usage.";
+CM_ SG_ 1509 GCU_NodeAddress "GCU address Fix to 0xE5";
+CM_ SG_ 1506 BMS_NMDataField2 "Not used,for further definition or usage.";
+CM_ SG_ 1506 BMS_NMWakeupOrignin "Origin of the wake up";
+CM_ SG_ 1506 BMS_NMDataField1 "Not used,for further definition or usage.";
+CM_ SG_ 1506 BMS_NodeAddress "BMS address Fix to 0xE2";
+CM_ SG_ 1507 VCU_NMDataField2_E "Not used,for further definition or usage.";
+CM_ SG_ 1507 VCU_NMWakeupOrignin_E "Origin of the wake up";
+CM_ SG_ 1507 VCU_NMDataField1_E "Not used,for further definition or usage.";
+CM_ SG_ 1507 VCU_NodeAddress_E "VCU address Fix to 0xE3";
+CM_ SG_ 1510 IPS_NMDataField2 "Not used,for further definition or usage.";
+CM_ SG_ 1510 IPS_NMWakeupOrignin "Origin of the wake up";
+CM_ SG_ 1510 IPS_NMDataField1 "Not used,for further definition or usage.";
+CM_ SG_ 1510 IPS_NodeAddress "IPS address Fix to 0xE6";
+CM_ SG_ 633 EMS_EngSpd "Engine Speed";
+CM_ SG_ 633 EMS_EngIdleRefSpd "Engine Idle reference speed";
+CM_ SG_ 633 EMS_EngSpdVD "EMS_EngSpd valid data";
+CM_ SG_ 822 EMS_EngWaterTempVD "EMS_EngWaterTemp validity";
+CM_ SG_ 822 EMS_OBDWarmUpCycleSt "EMS_OBDWarmUpCycleSt";
+CM_ SG_ 822 EMS_EngWaterTemp "Engine water temperature";
+CM_ SG_ 878 EMS_EngRunningTime "The time of engine running";
+CM_ SG_ 878 EMS_MTValvePINDiagFault "EMS control MT valve PIN diagnose fault";
+CM_ SG_ 878 EMS_VCU_MTValveReqSt "EMS control MT valve status";
+CM_ SG_ 926 TEL_Time_Sec "Second number";
+CM_ SG_ 926 TEL_Time_Min "Minute number";
+CM_ SG_ 926 TEL_Time_Day "Day number";
+CM_ SG_ 926 TEL_Time_Hour "Hour number";
+CM_ SG_ 926 TEL_Time_Month "Month number";
+CM_ SG_ 926 TEL_Time_Year "Year number";
+CM_ SG_ 122 OPC_GCUResolverValue "GCU Resolver Value";
+CM_ SG_ 122 OPC_DCUResolverValue "DCU Resolver Value";
+CM_ SG_ 678 BMS_1_Checksum "Message checksum CRC in accordance with J1850";
+CM_ SG_ 678 BMS_1_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 678 BMS_PwrDwnReq "Emergency power-off warning. when the HV battery needs an emergency power-off, this signal is used to notify each HV node. The received node should reduce their power  to 0  as soon as possible.";
+CM_ SG_ 678 BMS_DCUBattSt "working state of battery system for DCU";
+CM_ SG_ 678 BMS_BattVolt "actual voltage of battery pack";
+CM_ SG_ 678 BMS_BattCurr "actual current of battery";
+CM_ SG_ 885 BCM_KeySt "Ignition key position status";
+CM_ SG_ 750 VCU_VehStopTime "Vehicle drive system stop time";
+CM_ SG_ 750 VCU_DriveCycleSt "Vehicle drive cycle status";
+CM_ SG_ 750 VCU_VehAltitude "Vehicle altitude";
+CM_ SG_ 750 VCU_SubEngWarmUPCycle "VCU replace engine warm up cycle";
+CM_ SG_ 750 VCU_VehRunningTime "Vehilce drive system running time";
+CM_ SG_ 750 VCU_VehIdleRunningTime "Vehicle idle running time";
+CM_ SG_ 442 VCU_ClutchEngagedSt "Clutch Engaged status";
+CM_ SG_ 680 VCU_5_E_Checksum "Message checksum CRC in accordance with J1850";
+CM_ SG_ 680 VCU_5_E_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 680 VCU_GMC3To2ValveEn "Control direction of 3 to 2 way valve(GMC)£¨reserved.";
+CM_ SG_ 680 VCU_ExterTemp "outside temperature sensor(OBD)";
+CM_ SG_ 680 VCU_GMC3To2ValvePINDiagFaultSt "VCU control GMC3To2Valve pin's stage ,reserved.";
+CM_ SG_ 680 VCU_MTWaterPumpDiagSt "MT Water pump feedback diagnose status on PWM";
+CM_ SG_ 371 VCU_13_E_Checksum "Message checksum CRC in accordance with J1850";
+CM_ SG_ 371 VCU_DCU_CoolantTemp "Estimated IDU inlet coolant temperature";
+CM_ SG_ 371 VCU_13_E_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 371 VCU_DCU_MaxTorqDampgCtl "Maximum limit for damping torque that shall be applied (in Nm).";
+CM_ SG_ 371 VCU_DCU_TorqMax "max limit of positive torque for drive motor";
+CM_ SG_ 371 VCU_DCU_MaxTorqGradient "Maximum change rate of the torque demand";
+CM_ SG_ 371 VCU_DCU_TorqMin "max limit of negative torque for drive motor";
+CM_ SG_ 438 VCU_4_E_Checksum "Message checksum CRC in accordance with J1850";
+CM_ SG_ 438 VCU_DCU_ModeReq "requestable state/mode of drive motor";
+CM_ SG_ 438 VCU_4_E_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 438 VCU_DCU_DampReq "request of damping for DCU";
+CM_ SG_ 438 VCU_DCU_TorqSet "target torque for drive motor";
+CM_ SG_ 438 VCU_DCU_DampGain "Dynamic factor used to convert vibrations due to speed into equivalent damping";
+CM_ SG_ 438 VCU_DCU_TorqAllwd "Indication if drive motor is allowed to apply propulsive orregenerative torque on wheels";
+CM_ SG_ 438 VCU_DCU_SpdSet "target speed for drive motor, only with openclutch";
+CM_ SG_ 419 VCU_12_E_Checksum "Message checksum CRC in accordance with J1850";
+CM_ SG_ 419 VCU_12_E_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 419 VCU_DCU_UdcMax "max voltage at HV";
+CM_ SG_ 419 VCU_DCU_UdcMin "min voltage at HV";
+CM_ SG_ 419 VCU_DCU_IdcMin "max current for regenerative torque";
+CM_ SG_ 419 VCU_DCU_IdcMax "max current for drive torque";
+CM_ SG_ 1325 TEL_NMDataField2 "TEL Network management data";
+CM_ SG_ 1325 TEL_SubNetWakeRq "SubNet wake up request";
+CM_ SG_ 1325 TEL_NMDataField1 "TEL Network management data";
+CM_ SG_ 1325 TEL_NodeAddress "TEL node adress";
+CM_ SG_ 1359 GWM_NMDataField "GWM Network management data";
+CM_ SG_ 1359 GWM_SubNetWakeRq "SubNet wake up request";
+CM_ SG_ 1359 GWM_NodeAddress "GWM node address";
+CM_ SG_ 1323 ACU_NMDataField "ACU Network management data";
+CM_ SG_ 1323 ACU_NMNodeAddress "ACU node address";
+CM_ SG_ 608 BCS_VehSpd "Vehicle speed";
+CM_ SG_ 608 BCS_VehSpdVD "Quality/fault information to vehicle speed";
+CM_ SG_ 2028 DCU_Diag_Response "DCU_Diag_Tx";
+CM_ SG_ 1508 DCU_NMDataField2 "Not used,for further definition or usage.";
+CM_ SG_ 1508 DCU_NMWakeupOrignin "Origin of the wake up";
+CM_ SG_ 1508 DCU_NMDataField1 "Not used,for further definition or usage.";
+CM_ SG_ 1508 DCU_NodeAddress "DCU address Fix to 0xE4";
+CM_ SG_ 1699 DCU_Fault4 "ERAD fault information4";
+CM_ SG_ 1699 DCU_Fault3 "ERAD fault information3";
+CM_ SG_ 1699 DCU_Fault2 "ERAD fault information2";
+CM_ SG_ 1699 DCU_Fault1 "ERAD fault information1";
+CM_ SG_ 1693 DCU_OffsetCalVal "offset angle";
+CM_ SG_ 1693 DCU_Hwversion "Hardware version, according to GAC Definition (see Diagnostic Tables)";
+CM_ SG_ 1693 DCU_Swversion "Soft Ware Version of DCU£¨according to GAC Definition (see Diagnostic Tables)";
+CM_ SG_ 1693 DCU_ID "ID of DCU£¨according to GAC Definition (see Diagnostic Tables)";
+CM_ SG_ 882 DCU_8_Checksum "Message checksum CRC in accordance with J1850";
+CM_ SG_ 882 DCU_8_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 882 DCU_RepairInd "reserved for use for warnings, which do notlead to system reaction butrecommendation to go to repair shiop (e.g.single temp sensor disfunction)";
+CM_ SG_ 882 DCU_Debug_MotTempOvrErr "The  temperature  of Motor is too high";
+CM_ SG_ 882 DCU_Debug_InvtTempOvrErr "The  temperature  of ECU is too high";
+CM_ SG_ 882 DCU_EngMilLampReq "DCU request engine MIL lamp on";
+CM_ SG_ 882 DCU_StatTemp "Current temperature of stator";
+CM_ SG_ 882 DCU_FaultLampInd "Warning indicator to lighten fault lamp (Malfunction Indication Lamp,MIL)";
+CM_ SG_ 882 DCU_CooltReq "Requested DCU coolant massflow";
+CM_ SG_ 882 DCU_RotTemp "Current temperature of rotor";
+CM_ SG_ 882 DCU_SysTempOvrInd "Indicator of overheat warning lamp, which is lighten if temperature of drive motor system is too high.";
+CM_ SG_ 882 DCU_VoltageT30 "Current UT30 Voltage at inverter";
+CM_ SG_ 882 DCU_InvtTemp "Current temperature of inverter";
+CM_ SG_ 385 DCU_3_Checksum "Message checksum CRC in accordance with J1850";
+CM_ SG_ 385 DCU_DiagErrCode "DCU diagnostics error code";
+CM_ SG_ 385 DCU_GateDrvSt "state of gate driver";
+CM_ SG_ 385 DCU_DstActive "Surge Damping state active";
+CM_ SG_ 385 DCU_3_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 385 DCU_stTrqEmMin "actual state of derating regarding minmum torque";
+CM_ SG_ 385 DCU_TrqWoDstC "Torque without damping control (in Nm)";
+CM_ SG_ 385 DCU_stTrqEmMax "actual state of derating regarding maximum torque";
+CM_ SG_ 385 DCU_HvilSt "DCU send HVIL status by itself(DCU+GCU)";
+CM_ SG_ 385 DCU_TorqMin "maximum negative torque allowed (generator)";
+CM_ SG_ 385 DCU_TorqMax "maximum positive Torque allowed (motor)";
+CM_ SG_ 377 DCU_2_Checksum "Message checksum CRC in accordance with J1850";
+CM_ SG_ 377 DCU_OffsetCalInd "indication of ®Æffset calibration successfull flag";
+CM_ SG_ 377 DCU_bReadyHV "HV voltage operational";
+CM_ SG_ 377 DCU_bDiagReq "Diag request for e-machine Inverter Calibration";
+CM_ SG_ 377 DCU_2_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 377 DCU_Fault5 "ERAD fault information5";
+CM_ SG_ 377 DCU_DiagState "Diagnosis of calibration status of DCU";
+CM_ SG_ 377 DCU_ErrLvl "Error level(reserved)";
+CM_ SG_ 377 DCU_IsgDeratSts "DCU derate status";
+CM_ SG_ 377 DCU_DispDiagInfo "DCU diagnostics Information for display";
+CM_ SG_ 369 DCU_1_Checksum "Message checksum CRC in accordance with J1850";
+CM_ SG_ 369 DCU_ModeSt "mode status of drive motor";
+CM_ SG_ 369 DCU_1_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 369 DCU_TorqAct "actual torque of drive motor";
+CM_ SG_ 369 DCU_UdcAct "actual voltage at HV of DCU";
+CM_ SG_ 369 DCU_IdcAct "actual current at HV of DCU";
+CM_ SG_ 369 DCU_RotSpdAct "actual rotation speed of drvie motor";
+BA_DEF_ SG_  "Remark" STRING ;
+BA_DEF_ SG_  "EventCommandSignal" ENUM  "No","Yes";
+BA_DEF_ SG_  "GatewayedSignals" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInvalidValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "DiagMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Trigger","Passive";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Periodic","Event","IfActive","POE","PA";
+BA_DEF_DEF_  "Remark" "*";
+BA_DEF_DEF_  "EventCommandSignal" "No";
+BA_DEF_DEF_  "GatewayedSignals" "No";
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInvalidValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "DiagMessage" "No";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "Trigger";
+BA_DEF_DEF_  "GenMsgSendType" "Periodic";
+BA_ "GenMsgCycleTime" BO_ 2020 0;
+BA_ "GenMsgCycleTimeFast" BO_ 2020 0;
+BA_ "GenMsgSendType" BO_ 2020 0;
+BA_ "GenMsgCycleTime" BO_ 1509 200;
+BA_ "GenMsgCycleTimeFast" BO_ 1509 0;
+BA_ "GenMsgSendType" BO_ 1509 0;
+BA_ "GenMsgCycleTime" BO_ 1506 200;
+BA_ "GenMsgCycleTimeFast" BO_ 1506 0;
+BA_ "GenMsgSendType" BO_ 1506 0;
+BA_ "GenMsgCycleTime" BO_ 1507 200;
+BA_ "GenMsgCycleTimeFast" BO_ 1507 0;
+BA_ "GenMsgSendType" BO_ 1507 0;
+BA_ "GenMsgCycleTime" BO_ 1510 200;
+BA_ "GenMsgCycleTimeFast" BO_ 1510 0;
+BA_ "GenMsgSendType" BO_ 1510 0;
+BA_ "GenMsgCycleTime" BO_ 633 10;
+BA_ "GenMsgCycleTimeFast" BO_ 633 0;
+BA_ "GenMsgSendType" BO_ 633 0;
+BA_ "GenMsgCycleTime" BO_ 822 100;
+BA_ "GenMsgCycleTimeFast" BO_ 822 0;
+BA_ "GenMsgSendType" BO_ 822 0;
+BA_ "GenMsgCycleTime" BO_ 878 100;
+BA_ "GenMsgCycleTimeFast" BO_ 878 0;
+BA_ "GenMsgSendType" BO_ 878 0;
+BA_ "GenMsgCycleTime" BO_ 926 500;
+BA_ "GenMsgCycleTimeFast" BO_ 926 0;
+BA_ "GenMsgSendType" BO_ 926 0;
+BA_ "GenMsgCycleTime" BO_ 122 100;
+BA_ "GenMsgCycleTimeFast" BO_ 122 0;
+BA_ "GenMsgSendType" BO_ 122 0;
+BA_ "GenMsgCycleTime" BO_ 678 10;
+BA_ "GenMsgCycleTimeFast" BO_ 678 0;
+BA_ "GenMsgSendType" BO_ 678 0;
+BA_ "GenMsgCycleTime" BO_ 885 20;
+BA_ "GenMsgCycleTimeFast" BO_ 885 0;
+BA_ "GenMsgSendType" BO_ 885 0;
+BA_ "GenMsgCycleTime" BO_ 750 500;
+BA_ "GenMsgCycleTimeFast" BO_ 750 0;
+BA_ "GenMsgSendType" BO_ 750 0;
+BA_ "GenMsgCycleTime" BO_ 442 10;
+BA_ "GenMsgCycleTimeFast" BO_ 442 0;
+BA_ "GenMsgSendType" BO_ 442 0;
+BA_ "GenMsgCycleTime" BO_ 680 100;
+BA_ "GenMsgCycleTimeFast" BO_ 680 0;
+BA_ "GenMsgSendType" BO_ 680 0;
+BA_ "GenMsgCycleTime" BO_ 371 10;
+BA_ "GenMsgCycleTimeFast" BO_ 371 0;
+BA_ "GenMsgSendType" BO_ 371 0;
+BA_ "GenMsgCycleTime" BO_ 438 10;
+BA_ "GenMsgCycleTimeFast" BO_ 438 0;
+BA_ "GenMsgSendType" BO_ 438 0;
+BA_ "GenMsgCycleTime" BO_ 419 10;
+BA_ "GenMsgCycleTimeFast" BO_ 419 0;
+BA_ "GenMsgSendType" BO_ 419 0;
+BA_ "GenMsgCycleTime" BO_ 2015 0;
+BA_ "GenMsgCycleTimeFast" BO_ 2015 0;
+BA_ "GenMsgSendType" BO_ 2015 0;
+BA_ "GenMsgCycleTime" BO_ 1325 200;
+BA_ "GenMsgCycleTimeFast" BO_ 1325 0;
+BA_ "GenMsgSendType" BO_ 1325 0;
+BA_ "GenMsgCycleTime" BO_ 1359 200;
+BA_ "GenMsgCycleTimeFast" BO_ 1359 0;
+BA_ "GenMsgSendType" BO_ 1359 0;
+BA_ "GenMsgCycleTime" BO_ 1323 200;
+BA_ "GenMsgCycleTimeFast" BO_ 1323 0;
+BA_ "GenMsgSendType" BO_ 1323 0;
+BA_ "GenMsgCycleTime" BO_ 608 10;
+BA_ "GenMsgCycleTimeFast" BO_ 608 0;
+BA_ "GenMsgSendType" BO_ 608 0;
+BA_ "GenMsgCycleTime" BO_ 2028 0;
+BA_ "GenMsgCycleTimeFast" BO_ 2028 0;
+BA_ "GenMsgSendType" BO_ 2028 0;
+BA_ "GenMsgCycleTime" BO_ 1508 200;
+BA_ "GenMsgCycleTimeFast" BO_ 1508 0;
+BA_ "GenMsgSendType" BO_ 1508 0;
+BA_ "GenMsgCycleTime" BO_ 1699 200;
+BA_ "GenMsgCycleTimeFast" BO_ 1699 0;
+BA_ "GenMsgSendType" BO_ 1699 0;
+BA_ "GenMsgCycleTime" BO_ 1693 1000;
+BA_ "GenMsgCycleTimeFast" BO_ 1693 0;
+BA_ "GenMsgSendType" BO_ 1693 0;
+BA_ "GenMsgCycleTime" BO_ 882 500;
+BA_ "GenMsgCycleTimeFast" BO_ 882 0;
+BA_ "GenMsgSendType" BO_ 882 0;
+BA_ "GenMsgCycleTime" BO_ 385 10;
+BA_ "GenMsgCycleTimeFast" BO_ 385 0;
+BA_ "GenMsgSendType" BO_ 385 0;
+BA_ "GenMsgCycleTime" BO_ 377 100;
+BA_ "GenMsgCycleTimeFast" BO_ 377 0;
+BA_ "GenMsgSendType" BO_ 377 0;
+BA_ "GenMsgCycleTime" BO_ 369 10;
+BA_ "GenMsgCycleTimeFast" BO_ 369 0;
+BA_ "GenMsgSendType" BO_ 369 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_TEL_BattCurr 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_TEL_BattCurr 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_TEL_BattCurr 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_TEL_BattCurr 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_TEL_BattCurr 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_TEL_BattCurr 0;
+BA_ "Remark" SG_ 3221225472 DCU_TEL_BattCurr "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_TEL_BattCurr 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_4WDCurrActAmend2 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_4WDCurrActAmend2 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_4WDCurrActAmend2 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_4WDCurrActAmend2 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_4WDCurrActAmend2 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_4WDCurrActAmend2 0;
+BA_ "Remark" SG_ 3221225472 DCU_4WDCurrActAmend2 "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_4WDCurrActAmend2 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_2WDCurrActAmend 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_2WDCurrActAmend 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_2WDCurrActAmend 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_2WDCurrActAmend 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_2WDCurrActAmend 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_2WDCurrActAmend 0;
+BA_ "Remark" SG_ 3221225472 DCU_2WDCurrActAmend "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_2WDCurrActAmend 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_TEL_ModeSt 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_TEL_ModeSt 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_TEL_ModeSt 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_TEL_ModeSt 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_TEL_ModeSt 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_TEL_ModeSt 0;
+BA_ "Remark" SG_ 3221225472 DCU_TEL_ModeSt "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_TEL_ModeSt 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_DataNo2 2;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_DataNo2 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_DataNo2 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_DataNo2 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_DataNo2 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_DataNo2 0;
+BA_ "Remark" SG_ 3221225472 DCU_DataNo2 "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_DataNo2 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_TEL_StatTemp 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_TEL_StatTemp 255;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_TEL_StatTemp 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_TEL_StatTemp 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_TEL_StatTemp 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_TEL_StatTemp 0;
+BA_ "Remark" SG_ 3221225472 DCU_TEL_StatTemp "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_TEL_StatTemp 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_TEL_TorqAct 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_TEL_TorqAct 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_TEL_TorqAct 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_TEL_TorqAct 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_TEL_TorqAct 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_TEL_TorqAct 0;
+BA_ "Remark" SG_ 3221225472 DCU_TEL_TorqAct "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_TEL_TorqAct 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_TEL_RotSpdAct 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_TEL_RotSpdAct 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_TEL_RotSpdAct 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_TEL_RotSpdAct 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_TEL_RotSpdAct 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_TEL_RotSpdAct 0;
+BA_ "Remark" SG_ 3221225472 DCU_TEL_RotSpdAct "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_TEL_RotSpdAct 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_TEL_InvtTemp 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_TEL_InvtTemp 255;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_TEL_InvtTemp 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_TEL_InvtTemp 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_TEL_InvtTemp 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_TEL_InvtTemp 0;
+BA_ "Remark" SG_ 3221225472 DCU_TEL_InvtTemp "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_TEL_InvtTemp 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_MotorNumTotal 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_MotorNumTotal 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_MotorNumTotal 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_MotorNumTotal 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_MotorNumTotal 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_MotorNumTotal 0;
+BA_ "Remark" SG_ 3221225472 DCU_MotorNumTotal "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_MotorNumTotal 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_MotTempOvrErr 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_MotTempOvrErr 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_MotTempOvrErr 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_MotTempOvrErr 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_MotTempOvrErr 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_MotTempOvrErr 0;
+BA_ "Remark" SG_ 3221225472 DCU_MotTempOvrErr "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_MotTempOvrErr 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_ECUTempOvrErr 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_ECUTempOvrErr 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_ECUTempOvrErr 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_ECUTempOvrErr 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_ECUTempOvrErr 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_ECUTempOvrErr 0;
+BA_ "Remark" SG_ 3221225472 DCU_ECUTempOvrErr "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_ECUTempOvrErr 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_MotorNumOrder 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_MotorNumOrder 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_MotorNumOrder 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_MotorNumOrder 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_MotorNumOrder 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_MotorNumOrder 0;
+BA_ "Remark" SG_ 3221225472 DCU_MotorNumOrder "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_MotorNumOrder 0;
+BA_ "GenSigStartValue" SG_ 3221225472 DCU_DataNo1 1;
+BA_ "GenSigInvalidValue" SG_ 3221225472 DCU_DataNo1 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 DCU_DataNo1 0;
+BA_ "GenSigSendType" SG_ 3221225472 DCU_DataNo1 1;
+BA_ "GatewayedSignals" SG_ 3221225472 DCU_DataNo1 0;
+BA_ "EventCommandSignal" SG_ 3221225472 DCU_DataNo1 0;
+BA_ "Remark" SG_ 3221225472 DCU_DataNo1 "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 DCU_DataNo1 0;
+BA_ "GenSigStartValue" SG_ 3221225472 VCU_MTCoolantWPSpdPMWSet 126;
+BA_ "GenSigInvalidValue" SG_ 3221225472 VCU_MTCoolantWPSpdPMWSet 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 VCU_MTCoolantWPSpdPMWSet 0;
+BA_ "GenSigSendType" SG_ 3221225472 VCU_MTCoolantWPSpdPMWSet 1;
+BA_ "GatewayedSignals" SG_ 3221225472 VCU_MTCoolantWPSpdPMWSet 0;
+BA_ "EventCommandSignal" SG_ 3221225472 VCU_MTCoolantWPSpdPMWSet 0;
+BA_ "Remark" SG_ 3221225472 VCU_MTCoolantWPSpdPMWSet "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 VCU_MTCoolantWPSpdPMWSet 0;
+BA_ "GenSigStartValue" SG_ 3221225472 VCU_MTWaterPumpFault 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 VCU_MTWaterPumpFault 0;
+BA_ "GenSigInactiveValue" SG_ 3221225472 VCU_MTWaterPumpFault 0;
+BA_ "GenSigSendType" SG_ 3221225472 VCU_MTWaterPumpFault 1;
+BA_ "GatewayedSignals" SG_ 3221225472 VCU_MTWaterPumpFault 0;
+BA_ "EventCommandSignal" SG_ 3221225472 VCU_MTWaterPumpFault 0;
+BA_ "Remark" SG_ 3221225472 VCU_MTWaterPumpFault "";
+BA_ "GenSigTimeoutValue" SG_ 3221225472 VCU_MTWaterPumpFault 0;
+BA_ "GenSigStartValue" SG_ 2020 DCU_Diag_Request 0;
+BA_ "GenSigInvalidValue" SG_ 2020 DCU_Diag_Request 0;
+BA_ "GenSigInactiveValue" SG_ 2020 DCU_Diag_Request 0;
+BA_ "GenSigSendType" SG_ 2020 DCU_Diag_Request 1;
+BA_ "GatewayedSignals" SG_ 2020 DCU_Diag_Request 0;
+BA_ "EventCommandSignal" SG_ 2020 DCU_Diag_Request 0;
+BA_ "Remark" SG_ 2020 DCU_Diag_Request "";
+BA_ "GenSigTimeoutValue" SG_ 2020 DCU_Diag_Request 0;
+BA_ "GenSigStartValue" SG_ 1509 GCU_NMDataField2 0;
+BA_ "GenSigInvalidValue" SG_ 1509 GCU_NMDataField2 0;
+BA_ "GenSigInactiveValue" SG_ 1509 GCU_NMDataField2 0;
+BA_ "GenSigSendType" SG_ 1509 GCU_NMDataField2 1;
+BA_ "GatewayedSignals" SG_ 1509 GCU_NMDataField2 0;
+BA_ "EventCommandSignal" SG_ 1509 GCU_NMDataField2 0;
+BA_ "Remark" SG_ 1509 GCU_NMDataField2 "";
+BA_ "GenSigTimeoutValue" SG_ 1509 GCU_NMDataField2 0;
+BA_ "GenSigStartValue" SG_ 1509 GCU_SubNetWakeRq 0;
+BA_ "GenSigInvalidValue" SG_ 1509 GCU_SubNetWakeRq 0;
+BA_ "GenSigInactiveValue" SG_ 1509 GCU_SubNetWakeRq 0;
+BA_ "GenSigSendType" SG_ 1509 GCU_SubNetWakeRq 1;
+BA_ "GatewayedSignals" SG_ 1509 GCU_SubNetWakeRq 0;
+BA_ "EventCommandSignal" SG_ 1509 GCU_SubNetWakeRq 0;
+BA_ "Remark" SG_ 1509 GCU_SubNetWakeRq "";
+BA_ "GenSigTimeoutValue" SG_ 1509 GCU_SubNetWakeRq 0;
+BA_ "GenSigStartValue" SG_ 1509 GCU_NMWakeupOrignin 0;
+BA_ "GenSigInvalidValue" SG_ 1509 GCU_NMWakeupOrignin 0;
+BA_ "GenSigInactiveValue" SG_ 1509 GCU_NMWakeupOrignin 0;
+BA_ "GenSigSendType" SG_ 1509 GCU_NMWakeupOrignin 1;
+BA_ "GatewayedSignals" SG_ 1509 GCU_NMWakeupOrignin 0;
+BA_ "EventCommandSignal" SG_ 1509 GCU_NMWakeupOrignin 0;
+BA_ "Remark" SG_ 1509 GCU_NMWakeupOrignin "";
+BA_ "GenSigTimeoutValue" SG_ 1509 GCU_NMWakeupOrignin 0;
+BA_ "GenSigStartValue" SG_ 1509 GCU_NMDataField1 0;
+BA_ "GenSigInvalidValue" SG_ 1509 GCU_NMDataField1 0;
+BA_ "GenSigInactiveValue" SG_ 1509 GCU_NMDataField1 0;
+BA_ "GenSigSendType" SG_ 1509 GCU_NMDataField1 1;
+BA_ "GatewayedSignals" SG_ 1509 GCU_NMDataField1 0;
+BA_ "EventCommandSignal" SG_ 1509 GCU_NMDataField1 0;
+BA_ "Remark" SG_ 1509 GCU_NMDataField1 "";
+BA_ "GenSigTimeoutValue" SG_ 1509 GCU_NMDataField1 0;
+BA_ "GenSigStartValue" SG_ 1509 GCU_NodeAddress 229;
+BA_ "GenSigInvalidValue" SG_ 1509 GCU_NodeAddress 0;
+BA_ "GenSigInactiveValue" SG_ 1509 GCU_NodeAddress 0;
+BA_ "GenSigSendType" SG_ 1509 GCU_NodeAddress 1;
+BA_ "GatewayedSignals" SG_ 1509 GCU_NodeAddress 0;
+BA_ "EventCommandSignal" SG_ 1509 GCU_NodeAddress 0;
+BA_ "Remark" SG_ 1509 GCU_NodeAddress "";
+BA_ "GenSigTimeoutValue" SG_ 1509 GCU_NodeAddress 0;
+BA_ "GenSigStartValue" SG_ 1506 BMS_NMDataField2 0;
+BA_ "GenSigInvalidValue" SG_ 1506 BMS_NMDataField2 0;
+BA_ "GenSigInactiveValue" SG_ 1506 BMS_NMDataField2 0;
+BA_ "GenSigSendType" SG_ 1506 BMS_NMDataField2 1;
+BA_ "GatewayedSignals" SG_ 1506 BMS_NMDataField2 0;
+BA_ "EventCommandSignal" SG_ 1506 BMS_NMDataField2 0;
+BA_ "Remark" SG_ 1506 BMS_NMDataField2 "";
+BA_ "GenSigTimeoutValue" SG_ 1506 BMS_NMDataField2 0;
+BA_ "GenSigStartValue" SG_ 1506 BMS_SubNetWakeRq 0;
+BA_ "GenSigInvalidValue" SG_ 1506 BMS_SubNetWakeRq 0;
+BA_ "GenSigInactiveValue" SG_ 1506 BMS_SubNetWakeRq 0;
+BA_ "GenSigSendType" SG_ 1506 BMS_SubNetWakeRq 1;
+BA_ "GatewayedSignals" SG_ 1506 BMS_SubNetWakeRq 0;
+BA_ "EventCommandSignal" SG_ 1506 BMS_SubNetWakeRq 0;
+BA_ "Remark" SG_ 1506 BMS_SubNetWakeRq "";
+BA_ "GenSigTimeoutValue" SG_ 1506 BMS_SubNetWakeRq 0;
+BA_ "GenSigStartValue" SG_ 1506 BMS_NMWakeupOrignin 0;
+BA_ "GenSigInvalidValue" SG_ 1506 BMS_NMWakeupOrignin 0;
+BA_ "GenSigInactiveValue" SG_ 1506 BMS_NMWakeupOrignin 0;
+BA_ "GenSigSendType" SG_ 1506 BMS_NMWakeupOrignin 1;
+BA_ "GatewayedSignals" SG_ 1506 BMS_NMWakeupOrignin 0;
+BA_ "EventCommandSignal" SG_ 1506 BMS_NMWakeupOrignin 0;
+BA_ "Remark" SG_ 1506 BMS_NMWakeupOrignin "";
+BA_ "GenSigTimeoutValue" SG_ 1506 BMS_NMWakeupOrignin 0;
+BA_ "GenSigStartValue" SG_ 1506 BMS_NMDataField1 0;
+BA_ "GenSigInvalidValue" SG_ 1506 BMS_NMDataField1 0;
+BA_ "GenSigInactiveValue" SG_ 1506 BMS_NMDataField1 0;
+BA_ "GenSigSendType" SG_ 1506 BMS_NMDataField1 1;
+BA_ "GatewayedSignals" SG_ 1506 BMS_NMDataField1 0;
+BA_ "EventCommandSignal" SG_ 1506 BMS_NMDataField1 0;
+BA_ "Remark" SG_ 1506 BMS_NMDataField1 "";
+BA_ "GenSigTimeoutValue" SG_ 1506 BMS_NMDataField1 0;
+BA_ "GenSigStartValue" SG_ 1506 BMS_NodeAddress 226;
+BA_ "GenSigInvalidValue" SG_ 1506 BMS_NodeAddress 0;
+BA_ "GenSigInactiveValue" SG_ 1506 BMS_NodeAddress 0;
+BA_ "GenSigSendType" SG_ 1506 BMS_NodeAddress 1;
+BA_ "GatewayedSignals" SG_ 1506 BMS_NodeAddress 0;
+BA_ "EventCommandSignal" SG_ 1506 BMS_NodeAddress 0;
+BA_ "Remark" SG_ 1506 BMS_NodeAddress "";
+BA_ "GenSigTimeoutValue" SG_ 1506 BMS_NodeAddress 0;
+BA_ "GenSigStartValue" SG_ 1507 VCU_NMDataField2_E 0;
+BA_ "GenSigInvalidValue" SG_ 1507 VCU_NMDataField2_E 0;
+BA_ "GenSigInactiveValue" SG_ 1507 VCU_NMDataField2_E 0;
+BA_ "GenSigSendType" SG_ 1507 VCU_NMDataField2_E 1;
+BA_ "GatewayedSignals" SG_ 1507 VCU_NMDataField2_E 0;
+BA_ "EventCommandSignal" SG_ 1507 VCU_NMDataField2_E 0;
+BA_ "Remark" SG_ 1507 VCU_NMDataField2_E "";
+BA_ "GenSigTimeoutValue" SG_ 1507 VCU_NMDataField2_E 0;
+BA_ "GenSigStartValue" SG_ 1507 VCU_SubNetWakeRq_E 0;
+BA_ "GenSigInvalidValue" SG_ 1507 VCU_SubNetWakeRq_E 0;
+BA_ "GenSigInactiveValue" SG_ 1507 VCU_SubNetWakeRq_E 0;
+BA_ "GenSigSendType" SG_ 1507 VCU_SubNetWakeRq_E 1;
+BA_ "GatewayedSignals" SG_ 1507 VCU_SubNetWakeRq_E 0;
+BA_ "EventCommandSignal" SG_ 1507 VCU_SubNetWakeRq_E 0;
+BA_ "Remark" SG_ 1507 VCU_SubNetWakeRq_E "";
+BA_ "GenSigTimeoutValue" SG_ 1507 VCU_SubNetWakeRq_E 0;
+BA_ "GenSigStartValue" SG_ 1507 VCU_NMWakeupOrignin_E 0;
+BA_ "GenSigInvalidValue" SG_ 1507 VCU_NMWakeupOrignin_E 0;
+BA_ "GenSigInactiveValue" SG_ 1507 VCU_NMWakeupOrignin_E 0;
+BA_ "GenSigSendType" SG_ 1507 VCU_NMWakeupOrignin_E 1;
+BA_ "GatewayedSignals" SG_ 1507 VCU_NMWakeupOrignin_E 0;
+BA_ "EventCommandSignal" SG_ 1507 VCU_NMWakeupOrignin_E 0;
+BA_ "Remark" SG_ 1507 VCU_NMWakeupOrignin_E "";
+BA_ "GenSigTimeoutValue" SG_ 1507 VCU_NMWakeupOrignin_E 0;
+BA_ "GenSigStartValue" SG_ 1507 VCU_NMDataField1_E 0;
+BA_ "GenSigInvalidValue" SG_ 1507 VCU_NMDataField1_E 0;
+BA_ "GenSigInactiveValue" SG_ 1507 VCU_NMDataField1_E 0;
+BA_ "GenSigSendType" SG_ 1507 VCU_NMDataField1_E 1;
+BA_ "GatewayedSignals" SG_ 1507 VCU_NMDataField1_E 0;
+BA_ "EventCommandSignal" SG_ 1507 VCU_NMDataField1_E 0;
+BA_ "Remark" SG_ 1507 VCU_NMDataField1_E "";
+BA_ "GenSigTimeoutValue" SG_ 1507 VCU_NMDataField1_E 0;
+BA_ "GenSigStartValue" SG_ 1507 VCU_NodeAddress_E 227;
+BA_ "GenSigInvalidValue" SG_ 1507 VCU_NodeAddress_E 0;
+BA_ "GenSigInactiveValue" SG_ 1507 VCU_NodeAddress_E 0;
+BA_ "GenSigSendType" SG_ 1507 VCU_NodeAddress_E 1;
+BA_ "GatewayedSignals" SG_ 1507 VCU_NodeAddress_E 0;
+BA_ "EventCommandSignal" SG_ 1507 VCU_NodeAddress_E 0;
+BA_ "Remark" SG_ 1507 VCU_NodeAddress_E "";
+BA_ "GenSigTimeoutValue" SG_ 1507 VCU_NodeAddress_E 0;
+BA_ "GenSigStartValue" SG_ 1510 IPS_NMDataField2 0;
+BA_ "GenSigInvalidValue" SG_ 1510 IPS_NMDataField2 0;
+BA_ "GenSigInactiveValue" SG_ 1510 IPS_NMDataField2 0;
+BA_ "GenSigSendType" SG_ 1510 IPS_NMDataField2 1;
+BA_ "GatewayedSignals" SG_ 1510 IPS_NMDataField2 0;
+BA_ "EventCommandSignal" SG_ 1510 IPS_NMDataField2 0;
+BA_ "Remark" SG_ 1510 IPS_NMDataField2 "";
+BA_ "GenSigTimeoutValue" SG_ 1510 IPS_NMDataField2 0;
+BA_ "GenSigStartValue" SG_ 1510 IPS_SubNetWakeRq 0;
+BA_ "GenSigInvalidValue" SG_ 1510 IPS_SubNetWakeRq 0;
+BA_ "GenSigInactiveValue" SG_ 1510 IPS_SubNetWakeRq 0;
+BA_ "GenSigSendType" SG_ 1510 IPS_SubNetWakeRq 1;
+BA_ "GatewayedSignals" SG_ 1510 IPS_SubNetWakeRq 0;
+BA_ "EventCommandSignal" SG_ 1510 IPS_SubNetWakeRq 0;
+BA_ "Remark" SG_ 1510 IPS_SubNetWakeRq "";
+BA_ "GenSigTimeoutValue" SG_ 1510 IPS_SubNetWakeRq 0;
+BA_ "GenSigStartValue" SG_ 1510 IPS_NMWakeupOrignin 0;
+BA_ "GenSigInvalidValue" SG_ 1510 IPS_NMWakeupOrignin 0;
+BA_ "GenSigInactiveValue" SG_ 1510 IPS_NMWakeupOrignin 0;
+BA_ "GenSigSendType" SG_ 1510 IPS_NMWakeupOrignin 1;
+BA_ "GatewayedSignals" SG_ 1510 IPS_NMWakeupOrignin 0;
+BA_ "EventCommandSignal" SG_ 1510 IPS_NMWakeupOrignin 0;
+BA_ "Remark" SG_ 1510 IPS_NMWakeupOrignin "";
+BA_ "GenSigTimeoutValue" SG_ 1510 IPS_NMWakeupOrignin 0;
+BA_ "GenSigStartValue" SG_ 1510 IPS_NMDataField1 0;
+BA_ "GenSigInvalidValue" SG_ 1510 IPS_NMDataField1 0;
+BA_ "GenSigInactiveValue" SG_ 1510 IPS_NMDataField1 0;
+BA_ "GenSigSendType" SG_ 1510 IPS_NMDataField1 1;
+BA_ "GatewayedSignals" SG_ 1510 IPS_NMDataField1 0;
+BA_ "EventCommandSignal" SG_ 1510 IPS_NMDataField1 0;
+BA_ "Remark" SG_ 1510 IPS_NMDataField1 "";
+BA_ "GenSigTimeoutValue" SG_ 1510 IPS_NMDataField1 0;
+BA_ "GenSigStartValue" SG_ 1510 IPS_NodeAddress 230;
+BA_ "GenSigInvalidValue" SG_ 1510 IPS_NodeAddress 0;
+BA_ "GenSigInactiveValue" SG_ 1510 IPS_NodeAddress 0;
+BA_ "GenSigSendType" SG_ 1510 IPS_NodeAddress 1;
+BA_ "GatewayedSignals" SG_ 1510 IPS_NodeAddress 0;
+BA_ "EventCommandSignal" SG_ 1510 IPS_NodeAddress 0;
+BA_ "Remark" SG_ 1510 IPS_NodeAddress "";
+BA_ "GenSigTimeoutValue" SG_ 1510 IPS_NodeAddress 0;
+BA_ "GenSigStartValue" SG_ 633 EMS_EngSpd 0;
+BA_ "GenSigInvalidValue" SG_ 633 EMS_EngSpd 0;
+BA_ "GenSigInactiveValue" SG_ 633 EMS_EngSpd 0;
+BA_ "GenSigSendType" SG_ 633 EMS_EngSpd 1;
+BA_ "GatewayedSignals" SG_ 633 EMS_EngSpd 0;
+BA_ "EventCommandSignal" SG_ 633 EMS_EngSpd 0;
+BA_ "Remark" SG_ 633 EMS_EngSpd "";
+BA_ "GenSigTimeoutValue" SG_ 633 EMS_EngSpd 0;
+BA_ "GenSigStartValue" SG_ 633 EMS_EngIdleRefSpd 80;
+BA_ "GenSigInvalidValue" SG_ 633 EMS_EngIdleRefSpd 0;
+BA_ "GenSigInactiveValue" SG_ 633 EMS_EngIdleRefSpd 0;
+BA_ "GenSigSendType" SG_ 633 EMS_EngIdleRefSpd 1;
+BA_ "GatewayedSignals" SG_ 633 EMS_EngIdleRefSpd 0;
+BA_ "EventCommandSignal" SG_ 633 EMS_EngIdleRefSpd 0;
+BA_ "Remark" SG_ 633 EMS_EngIdleRefSpd "";
+BA_ "GenSigTimeoutValue" SG_ 633 EMS_EngIdleRefSpd 0;
+BA_ "GenSigStartValue" SG_ 633 EMS_EngSpdVD 0;
+BA_ "GenSigInvalidValue" SG_ 633 EMS_EngSpdVD 0;
+BA_ "GenSigInactiveValue" SG_ 633 EMS_EngSpdVD 0;
+BA_ "GenSigSendType" SG_ 633 EMS_EngSpdVD 1;
+BA_ "GatewayedSignals" SG_ 633 EMS_EngSpdVD 0;
+BA_ "EventCommandSignal" SG_ 633 EMS_EngSpdVD 0;
+BA_ "Remark" SG_ 633 EMS_EngSpdVD "";
+BA_ "GenSigTimeoutValue" SG_ 633 EMS_EngSpdVD 0;
+BA_ "GenSigStartValue" SG_ 822 EMS_EngWaterTempVD 0;
+BA_ "GenSigInvalidValue" SG_ 822 EMS_EngWaterTempVD 0;
+BA_ "GenSigInactiveValue" SG_ 822 EMS_EngWaterTempVD 0;
+BA_ "GenSigSendType" SG_ 822 EMS_EngWaterTempVD 1;
+BA_ "GatewayedSignals" SG_ 822 EMS_EngWaterTempVD 0;
+BA_ "EventCommandSignal" SG_ 822 EMS_EngWaterTempVD 0;
+BA_ "Remark" SG_ 822 EMS_EngWaterTempVD "";
+BA_ "GenSigTimeoutValue" SG_ 822 EMS_EngWaterTempVD 0;
+BA_ "GenSigStartValue" SG_ 822 EMS_OBDWarmUpCycleSt 0;
+BA_ "GenSigInvalidValue" SG_ 822 EMS_OBDWarmUpCycleSt 0;
+BA_ "GenSigInactiveValue" SG_ 822 EMS_OBDWarmUpCycleSt 0;
+BA_ "GenSigSendType" SG_ 822 EMS_OBDWarmUpCycleSt 1;
+BA_ "GatewayedSignals" SG_ 822 EMS_OBDWarmUpCycleSt 0;
+BA_ "EventCommandSignal" SG_ 822 EMS_OBDWarmUpCycleSt 0;
+BA_ "Remark" SG_ 822 EMS_OBDWarmUpCycleSt "";
+BA_ "GenSigTimeoutValue" SG_ 822 EMS_OBDWarmUpCycleSt 0;
+BA_ "GenSigStartValue" SG_ 822 EMS_EngWaterTemp 60;
+BA_ "GenSigInvalidValue" SG_ 822 EMS_EngWaterTemp 255;
+BA_ "GenSigInactiveValue" SG_ 822 EMS_EngWaterTemp 0;
+BA_ "GenSigSendType" SG_ 822 EMS_EngWaterTemp 1;
+BA_ "GatewayedSignals" SG_ 822 EMS_EngWaterTemp 0;
+BA_ "EventCommandSignal" SG_ 822 EMS_EngWaterTemp 0;
+BA_ "Remark" SG_ 822 EMS_EngWaterTemp "";
+BA_ "GenSigTimeoutValue" SG_ 822 EMS_EngWaterTemp 60;
+BA_ "GenSigStartValue" SG_ 878 EMS_EngRunningTime 0;
+BA_ "GenSigInvalidValue" SG_ 878 EMS_EngRunningTime 255;
+BA_ "GenSigInactiveValue" SG_ 878 EMS_EngRunningTime 0;
+BA_ "GenSigSendType" SG_ 878 EMS_EngRunningTime 1;
+BA_ "GatewayedSignals" SG_ 878 EMS_EngRunningTime 0;
+BA_ "EventCommandSignal" SG_ 878 EMS_EngRunningTime 0;
+BA_ "Remark" SG_ 878 EMS_EngRunningTime "";
+BA_ "GenSigTimeoutValue" SG_ 878 EMS_EngRunningTime 0;
+BA_ "GenSigStartValue" SG_ 878 EMS_MTValvePINDiagFault 3;
+BA_ "GenSigInvalidValue" SG_ 878 EMS_MTValvePINDiagFault 0;
+BA_ "GenSigInactiveValue" SG_ 878 EMS_MTValvePINDiagFault 0;
+BA_ "GenSigSendType" SG_ 878 EMS_MTValvePINDiagFault 1;
+BA_ "GatewayedSignals" SG_ 878 EMS_MTValvePINDiagFault 0;
+BA_ "EventCommandSignal" SG_ 878 EMS_MTValvePINDiagFault 0;
+BA_ "Remark" SG_ 878 EMS_MTValvePINDiagFault "";
+BA_ "GenSigTimeoutValue" SG_ 878 EMS_MTValvePINDiagFault 0;
+BA_ "GenSigStartValue" SG_ 878 EMS_VCU_MTValveReqSt 0;
+BA_ "GenSigInvalidValue" SG_ 878 EMS_VCU_MTValveReqSt 0;
+BA_ "GenSigInactiveValue" SG_ 878 EMS_VCU_MTValveReqSt 0;
+BA_ "GenSigSendType" SG_ 878 EMS_VCU_MTValveReqSt 1;
+BA_ "GatewayedSignals" SG_ 878 EMS_VCU_MTValveReqSt 0;
+BA_ "EventCommandSignal" SG_ 878 EMS_VCU_MTValveReqSt 0;
+BA_ "Remark" SG_ 878 EMS_VCU_MTValveReqSt "";
+BA_ "GenSigTimeoutValue" SG_ 878 EMS_VCU_MTValveReqSt 0;
+BA_ "GenSigStartValue" SG_ 926 TEL_Time_Sec 1;
+BA_ "GenSigInvalidValue" SG_ 926 TEL_Time_Sec 0;
+BA_ "GenSigInactiveValue" SG_ 926 TEL_Time_Sec 0;
+BA_ "GenSigSendType" SG_ 926 TEL_Time_Sec 1;
+BA_ "GatewayedSignals" SG_ 926 TEL_Time_Sec 0;
+BA_ "EventCommandSignal" SG_ 926 TEL_Time_Sec 0;
+BA_ "Remark" SG_ 926 TEL_Time_Sec "";
+BA_ "GenSigTimeoutValue" SG_ 926 TEL_Time_Sec 0;
+BA_ "GenSigStartValue" SG_ 926 TEL_Time_Min 1;
+BA_ "GenSigInvalidValue" SG_ 926 TEL_Time_Min 0;
+BA_ "GenSigInactiveValue" SG_ 926 TEL_Time_Min 0;
+BA_ "GenSigSendType" SG_ 926 TEL_Time_Min 1;
+BA_ "GatewayedSignals" SG_ 926 TEL_Time_Min 0;
+BA_ "EventCommandSignal" SG_ 926 TEL_Time_Min 0;
+BA_ "Remark" SG_ 926 TEL_Time_Min "";
+BA_ "GenSigTimeoutValue" SG_ 926 TEL_Time_Min 0;
+BA_ "GenSigStartValue" SG_ 926 TEL_Time_Day 1;
+BA_ "GenSigInvalidValue" SG_ 926 TEL_Time_Day 0;
+BA_ "GenSigInactiveValue" SG_ 926 TEL_Time_Day 0;
+BA_ "GenSigSendType" SG_ 926 TEL_Time_Day 1;
+BA_ "GatewayedSignals" SG_ 926 TEL_Time_Day 0;
+BA_ "EventCommandSignal" SG_ 926 TEL_Time_Day 0;
+BA_ "Remark" SG_ 926 TEL_Time_Day "";
+BA_ "GenSigTimeoutValue" SG_ 926 TEL_Time_Day 0;
+BA_ "GenSigStartValue" SG_ 926 TEL_Time_Hour 1;
+BA_ "GenSigInvalidValue" SG_ 926 TEL_Time_Hour 0;
+BA_ "GenSigInactiveValue" SG_ 926 TEL_Time_Hour 0;
+BA_ "GenSigSendType" SG_ 926 TEL_Time_Hour 1;
+BA_ "GatewayedSignals" SG_ 926 TEL_Time_Hour 0;
+BA_ "EventCommandSignal" SG_ 926 TEL_Time_Hour 0;
+BA_ "Remark" SG_ 926 TEL_Time_Hour "";
+BA_ "GenSigTimeoutValue" SG_ 926 TEL_Time_Hour 0;
+BA_ "GenSigStartValue" SG_ 926 TEL_Time_Month 1;
+BA_ "GenSigInvalidValue" SG_ 926 TEL_Time_Month 0;
+BA_ "GenSigInactiveValue" SG_ 926 TEL_Time_Month 0;
+BA_ "GenSigSendType" SG_ 926 TEL_Time_Month 1;
+BA_ "GatewayedSignals" SG_ 926 TEL_Time_Month 0;
+BA_ "EventCommandSignal" SG_ 926 TEL_Time_Month 0;
+BA_ "Remark" SG_ 926 TEL_Time_Month "";
+BA_ "GenSigTimeoutValue" SG_ 926 TEL_Time_Month 0;
+BA_ "GenSigStartValue" SG_ 926 TEL_Time_Year 15;
+BA_ "GenSigInvalidValue" SG_ 926 TEL_Time_Year 0;
+BA_ "GenSigInactiveValue" SG_ 926 TEL_Time_Year 0;
+BA_ "GenSigSendType" SG_ 926 TEL_Time_Year 1;
+BA_ "GatewayedSignals" SG_ 926 TEL_Time_Year 0;
+BA_ "EventCommandSignal" SG_ 926 TEL_Time_Year 0;
+BA_ "Remark" SG_ 926 TEL_Time_Year "";
+BA_ "GenSigTimeoutValue" SG_ 926 TEL_Time_Year 0;
+BA_ "GenSigSendType" SG_ 122 OPC_GCUResolverValue 1;
+BA_ "GenSigStartValue" SG_ 122 OPC_DCUResolverValue 0;
+BA_ "GenSigInvalidValue" SG_ 122 OPC_DCUResolverValue 0;
+BA_ "GenSigInactiveValue" SG_ 122 OPC_DCUResolverValue 0;
+BA_ "GenSigSendType" SG_ 122 OPC_DCUResolverValue 1;
+BA_ "GatewayedSignals" SG_ 122 OPC_DCUResolverValue 0;
+BA_ "EventCommandSignal" SG_ 122 OPC_DCUResolverValue 0;
+BA_ "Remark" SG_ 122 OPC_DCUResolverValue "";
+BA_ "GenSigTimeoutValue" SG_ 122 OPC_DCUResolverValue 0;
+BA_ "GenSigStartValue" SG_ 678 BMS_1_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 678 BMS_1_Checksum 0;
+BA_ "GenSigInactiveValue" SG_ 678 BMS_1_Checksum 0;
+BA_ "GenSigSendType" SG_ 678 BMS_1_Checksum 1;
+BA_ "GatewayedSignals" SG_ 678 BMS_1_Checksum 0;
+BA_ "EventCommandSignal" SG_ 678 BMS_1_Checksum 0;
+BA_ "Remark" SG_ 678 BMS_1_Checksum "";
+BA_ "GenSigTimeoutValue" SG_ 678 BMS_1_Checksum 0;
+BA_ "GenSigStartValue" SG_ 678 BMS_1_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 678 BMS_1_MsgCounter 0;
+BA_ "GenSigInactiveValue" SG_ 678 BMS_1_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 678 BMS_1_MsgCounter 1;
+BA_ "GatewayedSignals" SG_ 678 BMS_1_MsgCounter 0;
+BA_ "EventCommandSignal" SG_ 678 BMS_1_MsgCounter 0;
+BA_ "Remark" SG_ 678 BMS_1_MsgCounter "";
+BA_ "GenSigTimeoutValue" SG_ 678 BMS_1_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 678 BMS_PwrDwnReq 0;
+BA_ "GenSigInvalidValue" SG_ 678 BMS_PwrDwnReq 0;
+BA_ "GenSigInactiveValue" SG_ 678 BMS_PwrDwnReq 0;
+BA_ "GenSigSendType" SG_ 678 BMS_PwrDwnReq 1;
+BA_ "GatewayedSignals" SG_ 678 BMS_PwrDwnReq 1;
+BA_ "EventCommandSignal" SG_ 678 BMS_PwrDwnReq 0;
+BA_ "Remark" SG_ 678 BMS_PwrDwnReq "";
+BA_ "GenSigTimeoutValue" SG_ 678 BMS_PwrDwnReq 0;
+BA_ "GenSigStartValue" SG_ 678 BMS_DCUBattSt 0;
+BA_ "GenSigInvalidValue" SG_ 678 BMS_DCUBattSt 0;
+BA_ "GenSigInactiveValue" SG_ 678 BMS_DCUBattSt 0;
+BA_ "GenSigSendType" SG_ 678 BMS_DCUBattSt 1;
+BA_ "GatewayedSignals" SG_ 678 BMS_DCUBattSt 0;
+BA_ "EventCommandSignal" SG_ 678 BMS_DCUBattSt 0;
+BA_ "Remark" SG_ 678 BMS_DCUBattSt "";
+BA_ "GenSigTimeoutValue" SG_ 678 BMS_DCUBattSt 0;
+BA_ "GenSigStartValue" SG_ 678 BMS_BattVolt 0;
+BA_ "GenSigInvalidValue" SG_ 678 BMS_BattVolt 0;
+BA_ "GenSigInactiveValue" SG_ 678 BMS_BattVolt 0;
+BA_ "GenSigSendType" SG_ 678 BMS_BattVolt 1;
+BA_ "GatewayedSignals" SG_ 678 BMS_BattVolt 0;
+BA_ "EventCommandSignal" SG_ 678 BMS_BattVolt 0;
+BA_ "Remark" SG_ 678 BMS_BattVolt "";
+BA_ "GenSigTimeoutValue" SG_ 678 BMS_BattVolt 0;
+BA_ "GenSigStartValue" SG_ 678 BMS_BattCurr 65534;
+BA_ "GenSigInvalidValue" SG_ 678 BMS_BattCurr 0;
+BA_ "GenSigInactiveValue" SG_ 678 BMS_BattCurr 0;
+BA_ "GenSigSendType" SG_ 678 BMS_BattCurr 1;
+BA_ "GatewayedSignals" SG_ 678 BMS_BattCurr 0;
+BA_ "EventCommandSignal" SG_ 678 BMS_BattCurr 0;
+BA_ "Remark" SG_ 678 BMS_BattCurr "";
+BA_ "GenSigTimeoutValue" SG_ 678 BMS_BattCurr 0;
+BA_ "GenSigStartValue" SG_ 885 BCM_KeySt 0;
+BA_ "GenSigInvalidValue" SG_ 885 BCM_KeySt 0;
+BA_ "GenSigInactiveValue" SG_ 885 BCM_KeySt 0;
+BA_ "GenSigSendType" SG_ 885 BCM_KeySt 1;
+BA_ "GatewayedSignals" SG_ 885 BCM_KeySt 0;
+BA_ "EventCommandSignal" SG_ 885 BCM_KeySt 0;
+BA_ "Remark" SG_ 885 BCM_KeySt "";
+BA_ "GenSigTimeoutValue" SG_ 885 BCM_KeySt 0;
+BA_ "GenSigStartValue" SG_ 750 VCU_VehStopTime 0;
+BA_ "GenSigInvalidValue" SG_ 750 VCU_VehStopTime 511;
+BA_ "GenSigInactiveValue" SG_ 750 VCU_VehStopTime 0;
+BA_ "GenSigSendType" SG_ 750 VCU_VehStopTime 1;
+BA_ "GatewayedSignals" SG_ 750 VCU_VehStopTime 0;
+BA_ "EventCommandSignal" SG_ 750 VCU_VehStopTime 0;
+BA_ "Remark" SG_ 750 VCU_VehStopTime "";
+BA_ "GenSigTimeoutValue" SG_ 750 VCU_VehStopTime 0;
+BA_ "GenSigStartValue" SG_ 750 VCU_DriveCycleSt 0;
+BA_ "GenSigInvalidValue" SG_ 750 VCU_DriveCycleSt 0;
+BA_ "GenSigInactiveValue" SG_ 750 VCU_DriveCycleSt 0;
+BA_ "GenSigSendType" SG_ 750 VCU_DriveCycleSt 1;
+BA_ "GatewayedSignals" SG_ 750 VCU_DriveCycleSt 0;
+BA_ "EventCommandSignal" SG_ 750 VCU_DriveCycleSt 0;
+BA_ "Remark" SG_ 750 VCU_DriveCycleSt "";
+BA_ "GenSigTimeoutValue" SG_ 750 VCU_DriveCycleSt 0;
+BA_ "GenSigStartValue" SG_ 750 VCU_VehAltitude 0;
+BA_ "GenSigInvalidValue" SG_ 750 VCU_VehAltitude 8191;
+BA_ "GenSigInactiveValue" SG_ 750 VCU_VehAltitude 0;
+BA_ "GenSigSendType" SG_ 750 VCU_VehAltitude 1;
+BA_ "GatewayedSignals" SG_ 750 VCU_VehAltitude 0;
+BA_ "EventCommandSignal" SG_ 750 VCU_VehAltitude 0;
+BA_ "Remark" SG_ 750 VCU_VehAltitude "";
+BA_ "GenSigTimeoutValue" SG_ 750 VCU_VehAltitude 90;
+BA_ "GenSigStartValue" SG_ 750 VCU_SubEngWarmUPCycle 0;
+BA_ "GenSigInvalidValue" SG_ 750 VCU_SubEngWarmUPCycle 0;
+BA_ "GenSigInactiveValue" SG_ 750 VCU_SubEngWarmUPCycle 0;
+BA_ "GenSigSendType" SG_ 750 VCU_SubEngWarmUPCycle 1;
+BA_ "GatewayedSignals" SG_ 750 VCU_SubEngWarmUPCycle 0;
+BA_ "EventCommandSignal" SG_ 750 VCU_SubEngWarmUPCycle 0;
+BA_ "Remark" SG_ 750 VCU_SubEngWarmUPCycle "";
+BA_ "GenSigTimeoutValue" SG_ 750 VCU_SubEngWarmUPCycle 0;
+BA_ "GenSigStartValue" SG_ 750 VCU_VehRunningTime 0;
+BA_ "GenSigInvalidValue" SG_ 750 VCU_VehRunningTime 1023;
+BA_ "GenSigInactiveValue" SG_ 750 VCU_VehRunningTime 0;
+BA_ "GenSigSendType" SG_ 750 VCU_VehRunningTime 1;
+BA_ "GatewayedSignals" SG_ 750 VCU_VehRunningTime 0;
+BA_ "EventCommandSignal" SG_ 750 VCU_VehRunningTime 0;
+BA_ "Remark" SG_ 750 VCU_VehRunningTime "";
+BA_ "GenSigTimeoutValue" SG_ 750 VCU_VehRunningTime 0;
+BA_ "GenSigStartValue" SG_ 750 VCU_VehIdleRunningTime 0;
+BA_ "GenSigInvalidValue" SG_ 750 VCU_VehIdleRunningTime 255;
+BA_ "GenSigInactiveValue" SG_ 750 VCU_VehIdleRunningTime 0;
+BA_ "GenSigSendType" SG_ 750 VCU_VehIdleRunningTime 1;
+BA_ "GatewayedSignals" SG_ 750 VCU_VehIdleRunningTime 0;
+BA_ "EventCommandSignal" SG_ 750 VCU_VehIdleRunningTime 0;
+BA_ "Remark" SG_ 750 VCU_VehIdleRunningTime "";
+BA_ "GenSigTimeoutValue" SG_ 750 VCU_VehIdleRunningTime 0;
+BA_ "GenSigStartValue" SG_ 442 VCU_ClutchEngagedSt 0;
+BA_ "GenSigInvalidValue" SG_ 442 VCU_ClutchEngagedSt 0;
+BA_ "GenSigInactiveValue" SG_ 442 VCU_ClutchEngagedSt 0;
+BA_ "GenSigSendType" SG_ 442 VCU_ClutchEngagedSt 1;
+BA_ "GatewayedSignals" SG_ 442 VCU_ClutchEngagedSt 0;
+BA_ "EventCommandSignal" SG_ 442 VCU_ClutchEngagedSt 0;
+BA_ "Remark" SG_ 442 VCU_ClutchEngagedSt "";
+BA_ "GenSigTimeoutValue" SG_ 442 VCU_ClutchEngagedSt 0;
+BA_ "GenSigStartValue" SG_ 680 VCU_5_E_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 680 VCU_5_E_Checksum 0;
+BA_ "GenSigInactiveValue" SG_ 680 VCU_5_E_Checksum 0;
+BA_ "GenSigSendType" SG_ 680 VCU_5_E_Checksum 1;
+BA_ "GatewayedSignals" SG_ 680 VCU_5_E_Checksum 0;
+BA_ "EventCommandSignal" SG_ 680 VCU_5_E_Checksum 0;
+BA_ "Remark" SG_ 680 VCU_5_E_Checksum "";
+BA_ "GenSigTimeoutValue" SG_ 680 VCU_5_E_Checksum 0;
+BA_ "GenSigStartValue" SG_ 680 VCU_5_E_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 680 VCU_5_E_MsgCounter 0;
+BA_ "GenSigInactiveValue" SG_ 680 VCU_5_E_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 680 VCU_5_E_MsgCounter 1;
+BA_ "GatewayedSignals" SG_ 680 VCU_5_E_MsgCounter 0;
+BA_ "EventCommandSignal" SG_ 680 VCU_5_E_MsgCounter 0;
+BA_ "Remark" SG_ 680 VCU_5_E_MsgCounter "";
+BA_ "GenSigTimeoutValue" SG_ 680 VCU_5_E_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 680 VCU_GMC3To2ValveEn 1;
+BA_ "GenSigInvalidValue" SG_ 680 VCU_GMC3To2ValveEn 0;
+BA_ "GenSigInactiveValue" SG_ 680 VCU_GMC3To2ValveEn 0;
+BA_ "GenSigSendType" SG_ 680 VCU_GMC3To2ValveEn 1;
+BA_ "GatewayedSignals" SG_ 680 VCU_GMC3To2ValveEn 0;
+BA_ "EventCommandSignal" SG_ 680 VCU_GMC3To2ValveEn 0;
+BA_ "Remark" SG_ 680 VCU_GMC3To2ValveEn "";
+BA_ "GenSigTimeoutValue" SG_ 680 VCU_GMC3To2ValveEn 0;
+BA_ "GenSigStartValue" SG_ 680 VCU_ExterTemp 254;
+BA_ "GenSigInvalidValue" SG_ 680 VCU_ExterTemp 0;
+BA_ "GenSigInactiveValue" SG_ 680 VCU_ExterTemp 0;
+BA_ "GenSigSendType" SG_ 680 VCU_ExterTemp 1;
+BA_ "GatewayedSignals" SG_ 680 VCU_ExterTemp 0;
+BA_ "EventCommandSignal" SG_ 680 VCU_ExterTemp 0;
+BA_ "Remark" SG_ 680 VCU_ExterTemp "";
+BA_ "GenSigTimeoutValue" SG_ 680 VCU_ExterTemp 0;
+BA_ "GenSigStartValue" SG_ 680 VCU_GMC3To2ValvePINDiagFaultSt 3;
+BA_ "GenSigInvalidValue" SG_ 680 VCU_GMC3To2ValvePINDiagFaultSt 0;
+BA_ "GenSigInactiveValue" SG_ 680 VCU_GMC3To2ValvePINDiagFaultSt 0;
+BA_ "GenSigSendType" SG_ 680 VCU_GMC3To2ValvePINDiagFaultSt 1;
+BA_ "GatewayedSignals" SG_ 680 VCU_GMC3To2ValvePINDiagFaultSt 0;
+BA_ "EventCommandSignal" SG_ 680 VCU_GMC3To2ValvePINDiagFaultSt 0;
+BA_ "Remark" SG_ 680 VCU_GMC3To2ValvePINDiagFaultSt "";
+BA_ "GenSigTimeoutValue" SG_ 680 VCU_GMC3To2ValvePINDiagFaultSt 0;
+BA_ "GenSigStartValue" SG_ 680 VCU_MTWaterPumpDiagSt 0;
+BA_ "GenSigInvalidValue" SG_ 680 VCU_MTWaterPumpDiagSt 0;
+BA_ "GenSigInactiveValue" SG_ 680 VCU_MTWaterPumpDiagSt 0;
+BA_ "GenSigSendType" SG_ 680 VCU_MTWaterPumpDiagSt 1;
+BA_ "GatewayedSignals" SG_ 680 VCU_MTWaterPumpDiagSt 0;
+BA_ "EventCommandSignal" SG_ 680 VCU_MTWaterPumpDiagSt 0;
+BA_ "Remark" SG_ 680 VCU_MTWaterPumpDiagSt "";
+BA_ "GenSigTimeoutValue" SG_ 680 VCU_MTWaterPumpDiagSt 0;
+BA_ "GenSigStartValue" SG_ 371 VCU_13_E_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 371 VCU_13_E_Checksum 0;
+BA_ "GenSigInactiveValue" SG_ 371 VCU_13_E_Checksum 0;
+BA_ "GenSigSendType" SG_ 371 VCU_13_E_Checksum 1;
+BA_ "GatewayedSignals" SG_ 371 VCU_13_E_Checksum 0;
+BA_ "EventCommandSignal" SG_ 371 VCU_13_E_Checksum 0;
+BA_ "Remark" SG_ 371 VCU_13_E_Checksum "";
+BA_ "GenSigTimeoutValue" SG_ 371 VCU_13_E_Checksum 0;
+BA_ "GenSigStartValue" SG_ 371 VCU_DCU_CoolantTemp 254;
+BA_ "GenSigInvalidValue" SG_ 371 VCU_DCU_CoolantTemp 0;
+BA_ "GenSigInactiveValue" SG_ 371 VCU_DCU_CoolantTemp 0;
+BA_ "GenSigSendType" SG_ 371 VCU_DCU_CoolantTemp 1;
+BA_ "GatewayedSignals" SG_ 371 VCU_DCU_CoolantTemp 0;
+BA_ "EventCommandSignal" SG_ 371 VCU_DCU_CoolantTemp 0;
+BA_ "Remark" SG_ 371 VCU_DCU_CoolantTemp "";
+BA_ "GenSigTimeoutValue" SG_ 371 VCU_DCU_CoolantTemp 0;
+BA_ "GenSigStartValue" SG_ 371 VCU_13_E_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 371 VCU_13_E_MsgCounter 0;
+BA_ "GenSigInactiveValue" SG_ 371 VCU_13_E_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 371 VCU_13_E_MsgCounter 1;
+BA_ "GatewayedSignals" SG_ 371 VCU_13_E_MsgCounter 0;
+BA_ "EventCommandSignal" SG_ 371 VCU_13_E_MsgCounter 0;
+BA_ "Remark" SG_ 371 VCU_13_E_MsgCounter "";
+BA_ "GenSigTimeoutValue" SG_ 371 VCU_13_E_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 371 VCU_DCU_MaxTorqDampgCtl 254;
+BA_ "GenSigInvalidValue" SG_ 371 VCU_DCU_MaxTorqDampgCtl 0;
+BA_ "GenSigInactiveValue" SG_ 371 VCU_DCU_MaxTorqDampgCtl 0;
+BA_ "GenSigSendType" SG_ 371 VCU_DCU_MaxTorqDampgCtl 1;
+BA_ "GatewayedSignals" SG_ 371 VCU_DCU_MaxTorqDampgCtl 0;
+BA_ "EventCommandSignal" SG_ 371 VCU_DCU_MaxTorqDampgCtl 0;
+BA_ "Remark" SG_ 371 VCU_DCU_MaxTorqDampgCtl "";
+BA_ "GenSigTimeoutValue" SG_ 371 VCU_DCU_MaxTorqDampgCtl 0;
+BA_ "GenSigStartValue" SG_ 371 VCU_DCU_TorqMax 1022;
+BA_ "GenSigInvalidValue" SG_ 371 VCU_DCU_TorqMax 0;
+BA_ "GenSigInactiveValue" SG_ 371 VCU_DCU_TorqMax 0;
+BA_ "GenSigSendType" SG_ 371 VCU_DCU_TorqMax 1;
+BA_ "GatewayedSignals" SG_ 371 VCU_DCU_TorqMax 0;
+BA_ "EventCommandSignal" SG_ 371 VCU_DCU_TorqMax 0;
+BA_ "Remark" SG_ 371 VCU_DCU_TorqMax "";
+BA_ "GenSigTimeoutValue" SG_ 371 VCU_DCU_TorqMax 0;
+BA_ "GenSigStartValue" SG_ 371 VCU_DCU_MaxTorqGradient 16382;
+BA_ "GenSigInvalidValue" SG_ 371 VCU_DCU_MaxTorqGradient 0;
+BA_ "GenSigInactiveValue" SG_ 371 VCU_DCU_MaxTorqGradient 0;
+BA_ "GenSigSendType" SG_ 371 VCU_DCU_MaxTorqGradient 1;
+BA_ "GatewayedSignals" SG_ 371 VCU_DCU_MaxTorqGradient 0;
+BA_ "EventCommandSignal" SG_ 371 VCU_DCU_MaxTorqGradient 0;
+BA_ "Remark" SG_ 371 VCU_DCU_MaxTorqGradient "";
+BA_ "GenSigTimeoutValue" SG_ 371 VCU_DCU_MaxTorqGradient 0;
+BA_ "GenSigStartValue" SG_ 371 VCU_DCU_TorqMin 1;
+BA_ "GenSigInvalidValue" SG_ 371 VCU_DCU_TorqMin 0;
+BA_ "GenSigInactiveValue" SG_ 371 VCU_DCU_TorqMin 0;
+BA_ "GenSigSendType" SG_ 371 VCU_DCU_TorqMin 1;
+BA_ "GatewayedSignals" SG_ 371 VCU_DCU_TorqMin 0;
+BA_ "EventCommandSignal" SG_ 371 VCU_DCU_TorqMin 0;
+BA_ "Remark" SG_ 371 VCU_DCU_TorqMin "";
+BA_ "GenSigTimeoutValue" SG_ 371 VCU_DCU_TorqMin 0;
+BA_ "GenSigStartValue" SG_ 438 VCU_4_E_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 438 VCU_4_E_Checksum 0;
+BA_ "GenSigInactiveValue" SG_ 438 VCU_4_E_Checksum 0;
+BA_ "GenSigSendType" SG_ 438 VCU_4_E_Checksum 1;
+BA_ "GatewayedSignals" SG_ 438 VCU_4_E_Checksum 0;
+BA_ "EventCommandSignal" SG_ 438 VCU_4_E_Checksum 0;
+BA_ "Remark" SG_ 438 VCU_4_E_Checksum "";
+BA_ "GenSigTimeoutValue" SG_ 438 VCU_4_E_Checksum 0;
+BA_ "GenSigStartValue" SG_ 438 VCU_DCU_ModeReq 1;
+BA_ "GenSigInvalidValue" SG_ 438 VCU_DCU_ModeReq 0;
+BA_ "GenSigInactiveValue" SG_ 438 VCU_DCU_ModeReq 0;
+BA_ "GenSigSendType" SG_ 438 VCU_DCU_ModeReq 1;
+BA_ "GatewayedSignals" SG_ 438 VCU_DCU_ModeReq 0;
+BA_ "EventCommandSignal" SG_ 438 VCU_DCU_ModeReq 0;
+BA_ "Remark" SG_ 438 VCU_DCU_ModeReq "";
+BA_ "GenSigTimeoutValue" SG_ 438 VCU_DCU_ModeReq 0;
+BA_ "GenSigStartValue" SG_ 438 VCU_4_E_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 438 VCU_4_E_MsgCounter 0;
+BA_ "GenSigInactiveValue" SG_ 438 VCU_4_E_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 438 VCU_4_E_MsgCounter 1;
+BA_ "GatewayedSignals" SG_ 438 VCU_4_E_MsgCounter 0;
+BA_ "EventCommandSignal" SG_ 438 VCU_4_E_MsgCounter 0;
+BA_ "Remark" SG_ 438 VCU_4_E_MsgCounter "";
+BA_ "GenSigTimeoutValue" SG_ 438 VCU_4_E_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 438 VCU_DCU_DampReq 0;
+BA_ "GenSigInvalidValue" SG_ 438 VCU_DCU_DampReq 0;
+BA_ "GenSigInactiveValue" SG_ 438 VCU_DCU_DampReq 0;
+BA_ "GenSigSendType" SG_ 438 VCU_DCU_DampReq 1;
+BA_ "GatewayedSignals" SG_ 438 VCU_DCU_DampReq 0;
+BA_ "EventCommandSignal" SG_ 438 VCU_DCU_DampReq 0;
+BA_ "Remark" SG_ 438 VCU_DCU_DampReq "";
+BA_ "GenSigTimeoutValue" SG_ 438 VCU_DCU_DampReq 0;
+BA_ "GenSigStartValue" SG_ 438 VCU_DCU_TorqSet 2046;
+BA_ "GenSigInvalidValue" SG_ 438 VCU_DCU_TorqSet 0;
+BA_ "GenSigInactiveValue" SG_ 438 VCU_DCU_TorqSet 0;
+BA_ "GenSigSendType" SG_ 438 VCU_DCU_TorqSet 1;
+BA_ "GatewayedSignals" SG_ 438 VCU_DCU_TorqSet 1;
+BA_ "EventCommandSignal" SG_ 438 VCU_DCU_TorqSet 0;
+BA_ "Remark" SG_ 438 VCU_DCU_TorqSet "";
+BA_ "GenSigTimeoutValue" SG_ 438 VCU_DCU_TorqSet 0;
+BA_ "GenSigStartValue" SG_ 438 VCU_DCU_DampGain 3;
+BA_ "GenSigInvalidValue" SG_ 438 VCU_DCU_DampGain 0;
+BA_ "GenSigInactiveValue" SG_ 438 VCU_DCU_DampGain 0;
+BA_ "GenSigSendType" SG_ 438 VCU_DCU_DampGain 1;
+BA_ "GatewayedSignals" SG_ 438 VCU_DCU_DampGain 0;
+BA_ "EventCommandSignal" SG_ 438 VCU_DCU_DampGain 0;
+BA_ "Remark" SG_ 438 VCU_DCU_DampGain "";
+BA_ "GenSigTimeoutValue" SG_ 438 VCU_DCU_DampGain 0;
+BA_ "GenSigStartValue" SG_ 438 VCU_DCU_TorqAllwd 0;
+BA_ "GenSigInvalidValue" SG_ 438 VCU_DCU_TorqAllwd 0;
+BA_ "GenSigInactiveValue" SG_ 438 VCU_DCU_TorqAllwd 0;
+BA_ "GenSigSendType" SG_ 438 VCU_DCU_TorqAllwd 1;
+BA_ "GatewayedSignals" SG_ 438 VCU_DCU_TorqAllwd 0;
+BA_ "EventCommandSignal" SG_ 438 VCU_DCU_TorqAllwd 0;
+BA_ "Remark" SG_ 438 VCU_DCU_TorqAllwd "";
+BA_ "GenSigTimeoutValue" SG_ 438 VCU_DCU_TorqAllwd 0;
+BA_ "GenSigStartValue" SG_ 438 VCU_DCU_SpdSet 65534;
+BA_ "GenSigInvalidValue" SG_ 438 VCU_DCU_SpdSet 0;
+BA_ "GenSigInactiveValue" SG_ 438 VCU_DCU_SpdSet 0;
+BA_ "GenSigSendType" SG_ 438 VCU_DCU_SpdSet 1;
+BA_ "GatewayedSignals" SG_ 438 VCU_DCU_SpdSet 0;
+BA_ "EventCommandSignal" SG_ 438 VCU_DCU_SpdSet 0;
+BA_ "Remark" SG_ 438 VCU_DCU_SpdSet "";
+BA_ "GenSigTimeoutValue" SG_ 438 VCU_DCU_SpdSet 0;
+BA_ "GenSigStartValue" SG_ 419 VCU_12_E_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 419 VCU_12_E_Checksum 0;
+BA_ "GenSigInactiveValue" SG_ 419 VCU_12_E_Checksum 0;
+BA_ "GenSigSendType" SG_ 419 VCU_12_E_Checksum 1;
+BA_ "GatewayedSignals" SG_ 419 VCU_12_E_Checksum 0;
+BA_ "EventCommandSignal" SG_ 419 VCU_12_E_Checksum 0;
+BA_ "Remark" SG_ 419 VCU_12_E_Checksum "";
+BA_ "GenSigTimeoutValue" SG_ 419 VCU_12_E_Checksum 0;
+BA_ "GenSigStartValue" SG_ 419 VCU_12_E_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 419 VCU_12_E_MsgCounter 0;
+BA_ "GenSigInactiveValue" SG_ 419 VCU_12_E_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 419 VCU_12_E_MsgCounter 1;
+BA_ "GatewayedSignals" SG_ 419 VCU_12_E_MsgCounter 0;
+BA_ "EventCommandSignal" SG_ 419 VCU_12_E_MsgCounter 0;
+BA_ "Remark" SG_ 419 VCU_12_E_MsgCounter "";
+BA_ "GenSigTimeoutValue" SG_ 419 VCU_12_E_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 419 VCU_DCU_UdcMax 1022;
+BA_ "GenSigInvalidValue" SG_ 419 VCU_DCU_UdcMax 0;
+BA_ "GenSigInactiveValue" SG_ 419 VCU_DCU_UdcMax 0;
+BA_ "GenSigSendType" SG_ 419 VCU_DCU_UdcMax 1;
+BA_ "GatewayedSignals" SG_ 419 VCU_DCU_UdcMax 0;
+BA_ "EventCommandSignal" SG_ 419 VCU_DCU_UdcMax 0;
+BA_ "Remark" SG_ 419 VCU_DCU_UdcMax "";
+BA_ "GenSigTimeoutValue" SG_ 419 VCU_DCU_UdcMax 0;
+BA_ "GenSigStartValue" SG_ 419 VCU_DCU_UdcMin 1022;
+BA_ "GenSigInvalidValue" SG_ 419 VCU_DCU_UdcMin 0;
+BA_ "GenSigInactiveValue" SG_ 419 VCU_DCU_UdcMin 0;
+BA_ "GenSigSendType" SG_ 419 VCU_DCU_UdcMin 1;
+BA_ "GatewayedSignals" SG_ 419 VCU_DCU_UdcMin 0;
+BA_ "EventCommandSignal" SG_ 419 VCU_DCU_UdcMin 0;
+BA_ "Remark" SG_ 419 VCU_DCU_UdcMin "";
+BA_ "GenSigTimeoutValue" SG_ 419 VCU_DCU_UdcMin 0;
+BA_ "GenSigStartValue" SG_ 419 VCU_DCU_IdcMin 1;
+BA_ "GenSigInvalidValue" SG_ 419 VCU_DCU_IdcMin 0;
+BA_ "GenSigInactiveValue" SG_ 419 VCU_DCU_IdcMin 0;
+BA_ "GenSigSendType" SG_ 419 VCU_DCU_IdcMin 1;
+BA_ "GatewayedSignals" SG_ 419 VCU_DCU_IdcMin 0;
+BA_ "EventCommandSignal" SG_ 419 VCU_DCU_IdcMin 0;
+BA_ "Remark" SG_ 419 VCU_DCU_IdcMin "";
+BA_ "GenSigTimeoutValue" SG_ 419 VCU_DCU_IdcMin 0;
+BA_ "GenSigStartValue" SG_ 419 VCU_DCU_IdcMax 1022;
+BA_ "GenSigInvalidValue" SG_ 419 VCU_DCU_IdcMax 0;
+BA_ "GenSigInactiveValue" SG_ 419 VCU_DCU_IdcMax 0;
+BA_ "GenSigSendType" SG_ 419 VCU_DCU_IdcMax 1;
+BA_ "GatewayedSignals" SG_ 419 VCU_DCU_IdcMax 0;
+BA_ "EventCommandSignal" SG_ 419 VCU_DCU_IdcMax 0;
+BA_ "Remark" SG_ 419 VCU_DCU_IdcMax "";
+BA_ "GenSigTimeoutValue" SG_ 419 VCU_DCU_IdcMax 0;
+BA_ "GenSigStartValue" SG_ 2015 Func_Diag_Rx 0;
+BA_ "GenSigInvalidValue" SG_ 2015 Func_Diag_Rx 0;
+BA_ "GenSigInactiveValue" SG_ 2015 Func_Diag_Rx 0;
+BA_ "GenSigSendType" SG_ 2015 Func_Diag_Rx 1;
+BA_ "GatewayedSignals" SG_ 2015 Func_Diag_Rx 0;
+BA_ "EventCommandSignal" SG_ 2015 Func_Diag_Rx 0;
+BA_ "Remark" SG_ 2015 Func_Diag_Rx "";
+BA_ "GenSigTimeoutValue" SG_ 2015 Func_Diag_Rx 0;
+BA_ "GenSigStartValue" SG_ 1325 TEL_NMDataField2 0;
+BA_ "GenSigInvalidValue" SG_ 1325 TEL_NMDataField2 0;
+BA_ "GenSigInactiveValue" SG_ 1325 TEL_NMDataField2 0;
+BA_ "GenSigSendType" SG_ 1325 TEL_NMDataField2 1;
+BA_ "GatewayedSignals" SG_ 1325 TEL_NMDataField2 0;
+BA_ "EventCommandSignal" SG_ 1325 TEL_NMDataField2 0;
+BA_ "Remark" SG_ 1325 TEL_NMDataField2 "";
+BA_ "GenSigTimeoutValue" SG_ 1325 TEL_NMDataField2 0;
+BA_ "GenSigStartValue" SG_ 1325 TEL_SubNetWakeRq 0;
+BA_ "GenSigInvalidValue" SG_ 1325 TEL_SubNetWakeRq 0;
+BA_ "GenSigInactiveValue" SG_ 1325 TEL_SubNetWakeRq 0;
+BA_ "GenSigSendType" SG_ 1325 TEL_SubNetWakeRq 1;
+BA_ "GatewayedSignals" SG_ 1325 TEL_SubNetWakeRq 0;
+BA_ "EventCommandSignal" SG_ 1325 TEL_SubNetWakeRq 0;
+BA_ "Remark" SG_ 1325 TEL_SubNetWakeRq "";
+BA_ "GenSigTimeoutValue" SG_ 1325 TEL_SubNetWakeRq 0;
+BA_ "GenSigStartValue" SG_ 1325 TEL_NMDataField1 0;
+BA_ "GenSigInvalidValue" SG_ 1325 TEL_NMDataField1 0;
+BA_ "GenSigInactiveValue" SG_ 1325 TEL_NMDataField1 0;
+BA_ "GenSigSendType" SG_ 1325 TEL_NMDataField1 1;
+BA_ "GatewayedSignals" SG_ 1325 TEL_NMDataField1 0;
+BA_ "EventCommandSignal" SG_ 1325 TEL_NMDataField1 0;
+BA_ "Remark" SG_ 1325 TEL_NMDataField1 "";
+BA_ "GenSigTimeoutValue" SG_ 1325 TEL_NMDataField1 0;
+BA_ "GenSigStartValue" SG_ 1325 TEL_NodeAddress 45;
+BA_ "GenSigInvalidValue" SG_ 1325 TEL_NodeAddress 0;
+BA_ "GenSigInactiveValue" SG_ 1325 TEL_NodeAddress 0;
+BA_ "GenSigSendType" SG_ 1325 TEL_NodeAddress 1;
+BA_ "GatewayedSignals" SG_ 1325 TEL_NodeAddress 0;
+BA_ "EventCommandSignal" SG_ 1325 TEL_NodeAddress 0;
+BA_ "Remark" SG_ 1325 TEL_NodeAddress "";
+BA_ "GenSigTimeoutValue" SG_ 1325 TEL_NodeAddress 0;
+BA_ "GenSigStartValue" SG_ 1359 GWM_NMDataField 0;
+BA_ "GenSigInvalidValue" SG_ 1359 GWM_NMDataField 0;
+BA_ "GenSigInactiveValue" SG_ 1359 GWM_NMDataField 0;
+BA_ "GenSigSendType" SG_ 1359 GWM_NMDataField 1;
+BA_ "GatewayedSignals" SG_ 1359 GWM_NMDataField 0;
+BA_ "EventCommandSignal" SG_ 1359 GWM_NMDataField 0;
+BA_ "Remark" SG_ 1359 GWM_NMDataField "";
+BA_ "GenSigTimeoutValue" SG_ 1359 GWM_NMDataField 0;
+BA_ "GenSigStartValue" SG_ 1359 GWM_SubNetWakeRq 0;
+BA_ "GenSigInvalidValue" SG_ 1359 GWM_SubNetWakeRq 0;
+BA_ "GenSigInactiveValue" SG_ 1359 GWM_SubNetWakeRq 0;
+BA_ "GenSigSendType" SG_ 1359 GWM_SubNetWakeRq 1;
+BA_ "GatewayedSignals" SG_ 1359 GWM_SubNetWakeRq 0;
+BA_ "EventCommandSignal" SG_ 1359 GWM_SubNetWakeRq 0;
+BA_ "Remark" SG_ 1359 GWM_SubNetWakeRq "";
+BA_ "GenSigTimeoutValue" SG_ 1359 GWM_SubNetWakeRq 0;
+BA_ "GenSigStartValue" SG_ 1359 GWM_NodeAddress 79;
+BA_ "GenSigInvalidValue" SG_ 1359 GWM_NodeAddress 0;
+BA_ "GenSigInactiveValue" SG_ 1359 GWM_NodeAddress 0;
+BA_ "GenSigSendType" SG_ 1359 GWM_NodeAddress 1;
+BA_ "GatewayedSignals" SG_ 1359 GWM_NodeAddress 0;
+BA_ "EventCommandSignal" SG_ 1359 GWM_NodeAddress 0;
+BA_ "Remark" SG_ 1359 GWM_NodeAddress "";
+BA_ "GenSigTimeoutValue" SG_ 1359 GWM_NodeAddress 0;
+BA_ "GenSigStartValue" SG_ 1323 ACU_NMDataField 0;
+BA_ "GenSigInvalidValue" SG_ 1323 ACU_NMDataField 0;
+BA_ "GenSigInactiveValue" SG_ 1323 ACU_NMDataField 0;
+BA_ "GenSigSendType" SG_ 1323 ACU_NMDataField 1;
+BA_ "GatewayedSignals" SG_ 1323 ACU_NMDataField 0;
+BA_ "EventCommandSignal" SG_ 1323 ACU_NMDataField 0;
+BA_ "Remark" SG_ 1323 ACU_NMDataField "";
+BA_ "GenSigTimeoutValue" SG_ 1323 ACU_NMDataField 0;
+BA_ "GenSigStartValue" SG_ 1323 ACU_NMNodeAddress 43;
+BA_ "GenSigInvalidValue" SG_ 1323 ACU_NMNodeAddress 0;
+BA_ "GenSigInactiveValue" SG_ 1323 ACU_NMNodeAddress 0;
+BA_ "GenSigSendType" SG_ 1323 ACU_NMNodeAddress 1;
+BA_ "GatewayedSignals" SG_ 1323 ACU_NMNodeAddress 0;
+BA_ "EventCommandSignal" SG_ 1323 ACU_NMNodeAddress 0;
+BA_ "Remark" SG_ 1323 ACU_NMNodeAddress "";
+BA_ "GenSigTimeoutValue" SG_ 1323 ACU_NMNodeAddress 0;
+BA_ "GenSigStartValue" SG_ 608 BCS_VehSpd 0;
+BA_ "GenSigInvalidValue" SG_ 608 BCS_VehSpd 0;
+BA_ "GenSigInactiveValue" SG_ 608 BCS_VehSpd 0;
+BA_ "GenSigSendType" SG_ 608 BCS_VehSpd 1;
+BA_ "GatewayedSignals" SG_ 608 BCS_VehSpd 0;
+BA_ "EventCommandSignal" SG_ 608 BCS_VehSpd 0;
+BA_ "Remark" SG_ 608 BCS_VehSpd "";
+BA_ "GenSigTimeoutValue" SG_ 608 BCS_VehSpd 0;
+BA_ "GenSigStartValue" SG_ 608 BCS_VehSpdVD 0;
+BA_ "GenSigInvalidValue" SG_ 608 BCS_VehSpdVD 0;
+BA_ "GenSigInactiveValue" SG_ 608 BCS_VehSpdVD 0;
+BA_ "GenSigSendType" SG_ 608 BCS_VehSpdVD 1;
+BA_ "GatewayedSignals" SG_ 608 BCS_VehSpdVD 0;
+BA_ "EventCommandSignal" SG_ 608 BCS_VehSpdVD 0;
+BA_ "Remark" SG_ 608 BCS_VehSpdVD "";
+BA_ "GenSigTimeoutValue" SG_ 608 BCS_VehSpdVD 0;
+BA_ "GenSigStartValue" SG_ 2028 DCU_Diag_Response 0;
+BA_ "GenSigInvalidValue" SG_ 2028 DCU_Diag_Response 0;
+BA_ "GenSigInactiveValue" SG_ 2028 DCU_Diag_Response 0;
+BA_ "GenSigSendType" SG_ 2028 DCU_Diag_Response 1;
+BA_ "GatewayedSignals" SG_ 2028 DCU_Diag_Response 0;
+BA_ "EventCommandSignal" SG_ 2028 DCU_Diag_Response 0;
+BA_ "Remark" SG_ 2028 DCU_Diag_Response "";
+BA_ "GenSigTimeoutValue" SG_ 2028 DCU_Diag_Response 0;
+BA_ "GenSigStartValue" SG_ 1508 DCU_NMDataField2 0;
+BA_ "GenSigInvalidValue" SG_ 1508 DCU_NMDataField2 0;
+BA_ "GenSigInactiveValue" SG_ 1508 DCU_NMDataField2 0;
+BA_ "GenSigSendType" SG_ 1508 DCU_NMDataField2 1;
+BA_ "GatewayedSignals" SG_ 1508 DCU_NMDataField2 0;
+BA_ "EventCommandSignal" SG_ 1508 DCU_NMDataField2 0;
+BA_ "Remark" SG_ 1508 DCU_NMDataField2 "";
+BA_ "GenSigTimeoutValue" SG_ 1508 DCU_NMDataField2 0;
+BA_ "GenSigStartValue" SG_ 1508 DCU_SubNetWakeRq 0;
+BA_ "GenSigInvalidValue" SG_ 1508 DCU_SubNetWakeRq 0;
+BA_ "GenSigInactiveValue" SG_ 1508 DCU_SubNetWakeRq 0;
+BA_ "GenSigSendType" SG_ 1508 DCU_SubNetWakeRq 1;
+BA_ "GatewayedSignals" SG_ 1508 DCU_SubNetWakeRq 0;
+BA_ "EventCommandSignal" SG_ 1508 DCU_SubNetWakeRq 0;
+BA_ "Remark" SG_ 1508 DCU_SubNetWakeRq "";
+BA_ "GenSigTimeoutValue" SG_ 1508 DCU_SubNetWakeRq 0;
+BA_ "GenSigStartValue" SG_ 1508 DCU_NMWakeupOrignin 0;
+BA_ "GenSigInvalidValue" SG_ 1508 DCU_NMWakeupOrignin 0;
+BA_ "GenSigInactiveValue" SG_ 1508 DCU_NMWakeupOrignin 0;
+BA_ "GenSigSendType" SG_ 1508 DCU_NMWakeupOrignin 1;
+BA_ "GatewayedSignals" SG_ 1508 DCU_NMWakeupOrignin 0;
+BA_ "EventCommandSignal" SG_ 1508 DCU_NMWakeupOrignin 0;
+BA_ "Remark" SG_ 1508 DCU_NMWakeupOrignin "";
+BA_ "GenSigTimeoutValue" SG_ 1508 DCU_NMWakeupOrignin 0;
+BA_ "GenSigStartValue" SG_ 1508 DCU_NMDataField1 0;
+BA_ "GenSigInvalidValue" SG_ 1508 DCU_NMDataField1 0;
+BA_ "GenSigInactiveValue" SG_ 1508 DCU_NMDataField1 0;
+BA_ "GenSigSendType" SG_ 1508 DCU_NMDataField1 1;
+BA_ "GatewayedSignals" SG_ 1508 DCU_NMDataField1 0;
+BA_ "EventCommandSignal" SG_ 1508 DCU_NMDataField1 0;
+BA_ "Remark" SG_ 1508 DCU_NMDataField1 "";
+BA_ "GenSigTimeoutValue" SG_ 1508 DCU_NMDataField1 0;
+BA_ "GenSigStartValue" SG_ 1508 DCU_NodeAddress 228;
+BA_ "GenSigInvalidValue" SG_ 1508 DCU_NodeAddress 0;
+BA_ "GenSigInactiveValue" SG_ 1508 DCU_NodeAddress 0;
+BA_ "GenSigSendType" SG_ 1508 DCU_NodeAddress 1;
+BA_ "GatewayedSignals" SG_ 1508 DCU_NodeAddress 0;
+BA_ "EventCommandSignal" SG_ 1508 DCU_NodeAddress 0;
+BA_ "Remark" SG_ 1508 DCU_NodeAddress "";
+BA_ "GenSigTimeoutValue" SG_ 1508 DCU_NodeAddress 0;
+BA_ "GenSigStartValue" SG_ 1699 DCU_Fault4 0;
+BA_ "GenSigInvalidValue" SG_ 1699 DCU_Fault4 0;
+BA_ "GenSigInactiveValue" SG_ 1699 DCU_Fault4 0;
+BA_ "GenSigSendType" SG_ 1699 DCU_Fault4 1;
+BA_ "GatewayedSignals" SG_ 1699 DCU_Fault4 0;
+BA_ "EventCommandSignal" SG_ 1699 DCU_Fault4 0;
+BA_ "Remark" SG_ 1699 DCU_Fault4 "";
+BA_ "GenSigTimeoutValue" SG_ 1699 DCU_Fault4 0;
+BA_ "GenSigStartValue" SG_ 1699 DCU_Fault3 0;
+BA_ "GenSigInvalidValue" SG_ 1699 DCU_Fault3 0;
+BA_ "GenSigInactiveValue" SG_ 1699 DCU_Fault3 0;
+BA_ "GenSigSendType" SG_ 1699 DCU_Fault3 1;
+BA_ "GatewayedSignals" SG_ 1699 DCU_Fault3 0;
+BA_ "EventCommandSignal" SG_ 1699 DCU_Fault3 0;
+BA_ "Remark" SG_ 1699 DCU_Fault3 "";
+BA_ "GenSigTimeoutValue" SG_ 1699 DCU_Fault3 0;
+BA_ "GenSigStartValue" SG_ 1699 DCU_Fault2 0;
+BA_ "GenSigInvalidValue" SG_ 1699 DCU_Fault2 0;
+BA_ "GenSigInactiveValue" SG_ 1699 DCU_Fault2 0;
+BA_ "GenSigSendType" SG_ 1699 DCU_Fault2 1;
+BA_ "GatewayedSignals" SG_ 1699 DCU_Fault2 0;
+BA_ "EventCommandSignal" SG_ 1699 DCU_Fault2 0;
+BA_ "Remark" SG_ 1699 DCU_Fault2 "";
+BA_ "GenSigTimeoutValue" SG_ 1699 DCU_Fault2 0;
+BA_ "GenSigStartValue" SG_ 1699 DCU_Fault1 0;
+BA_ "GenSigInvalidValue" SG_ 1699 DCU_Fault1 0;
+BA_ "GenSigInactiveValue" SG_ 1699 DCU_Fault1 0;
+BA_ "GenSigSendType" SG_ 1699 DCU_Fault1 1;
+BA_ "GatewayedSignals" SG_ 1699 DCU_Fault1 0;
+BA_ "EventCommandSignal" SG_ 1699 DCU_Fault1 0;
+BA_ "Remark" SG_ 1699 DCU_Fault1 "";
+BA_ "GenSigTimeoutValue" SG_ 1699 DCU_Fault1 0;
+BA_ "GenSigStartValue" SG_ 1693 DCU_OffsetCalVal 0;
+BA_ "GenSigInvalidValue" SG_ 1693 DCU_OffsetCalVal 0;
+BA_ "GenSigInactiveValue" SG_ 1693 DCU_OffsetCalVal 0;
+BA_ "GenSigSendType" SG_ 1693 DCU_OffsetCalVal 1;
+BA_ "GatewayedSignals" SG_ 1693 DCU_OffsetCalVal 0;
+BA_ "EventCommandSignal" SG_ 1693 DCU_OffsetCalVal 0;
+BA_ "Remark" SG_ 1693 DCU_OffsetCalVal "";
+BA_ "GenSigTimeoutValue" SG_ 1693 DCU_OffsetCalVal 0;
+BA_ "GenSigStartValue" SG_ 1693 DCU_Hwversion 0;
+BA_ "GenSigInvalidValue" SG_ 1693 DCU_Hwversion 0;
+BA_ "GenSigInactiveValue" SG_ 1693 DCU_Hwversion 0;
+BA_ "GenSigSendType" SG_ 1693 DCU_Hwversion 1;
+BA_ "GatewayedSignals" SG_ 1693 DCU_Hwversion 0;
+BA_ "EventCommandSignal" SG_ 1693 DCU_Hwversion 0;
+BA_ "Remark" SG_ 1693 DCU_Hwversion "";
+BA_ "GenSigTimeoutValue" SG_ 1693 DCU_Hwversion 0;
+BA_ "GenSigStartValue" SG_ 1693 DCU_Swversion 0;
+BA_ "GenSigInvalidValue" SG_ 1693 DCU_Swversion 0;
+BA_ "GenSigInactiveValue" SG_ 1693 DCU_Swversion 0;
+BA_ "GenSigSendType" SG_ 1693 DCU_Swversion 1;
+BA_ "GatewayedSignals" SG_ 1693 DCU_Swversion 0;
+BA_ "EventCommandSignal" SG_ 1693 DCU_Swversion 0;
+BA_ "Remark" SG_ 1693 DCU_Swversion "";
+BA_ "GenSigTimeoutValue" SG_ 1693 DCU_Swversion 0;
+BA_ "GenSigStartValue" SG_ 1693 DCU_ID 0;
+BA_ "GenSigInvalidValue" SG_ 1693 DCU_ID 0;
+BA_ "GenSigInactiveValue" SG_ 1693 DCU_ID 0;
+BA_ "GenSigSendType" SG_ 1693 DCU_ID 1;
+BA_ "GatewayedSignals" SG_ 1693 DCU_ID 0;
+BA_ "EventCommandSignal" SG_ 1693 DCU_ID 0;
+BA_ "Remark" SG_ 1693 DCU_ID "";
+BA_ "GenSigTimeoutValue" SG_ 1693 DCU_ID 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_8_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_8_Checksum 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_8_Checksum 0;
+BA_ "GenSigSendType" SG_ 882 DCU_8_Checksum 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_8_Checksum 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_8_Checksum 0;
+BA_ "Remark" SG_ 882 DCU_8_Checksum "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_8_Checksum 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_8_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_8_MsgCounter 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_8_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 882 DCU_8_MsgCounter 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_8_MsgCounter 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_8_MsgCounter 0;
+BA_ "Remark" SG_ 882 DCU_8_MsgCounter "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_8_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_RepairInd 0;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_RepairInd 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_RepairInd 0;
+BA_ "GenSigSendType" SG_ 882 DCU_RepairInd 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_RepairInd 1;
+BA_ "EventCommandSignal" SG_ 882 DCU_RepairInd 0;
+BA_ "Remark" SG_ 882 DCU_RepairInd "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_RepairInd 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_Debug_MotTempOvrErr 0;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_Debug_MotTempOvrErr 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_Debug_MotTempOvrErr 0;
+BA_ "GenSigSendType" SG_ 882 DCU_Debug_MotTempOvrErr 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_Debug_MotTempOvrErr 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_Debug_MotTempOvrErr 0;
+BA_ "Remark" SG_ 882 DCU_Debug_MotTempOvrErr "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_Debug_MotTempOvrErr 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_Debug_InvtTempOvrErr 0;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_Debug_InvtTempOvrErr 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_Debug_InvtTempOvrErr 0;
+BA_ "GenSigSendType" SG_ 882 DCU_Debug_InvtTempOvrErr 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_Debug_InvtTempOvrErr 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_Debug_InvtTempOvrErr 0;
+BA_ "Remark" SG_ 882 DCU_Debug_InvtTempOvrErr "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_Debug_InvtTempOvrErr 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_EngMilLampReq 0;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_EngMilLampReq 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_EngMilLampReq 0;
+BA_ "GenSigSendType" SG_ 882 DCU_EngMilLampReq 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_EngMilLampReq 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_EngMilLampReq 0;
+BA_ "Remark" SG_ 882 DCU_EngMilLampReq "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_EngMilLampReq 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_StatTemp 510;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_StatTemp 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_StatTemp 0;
+BA_ "GenSigSendType" SG_ 882 DCU_StatTemp 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_StatTemp 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_StatTemp 0;
+BA_ "Remark" SG_ 882 DCU_StatTemp "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_StatTemp 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_FaultLampInd 0;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_FaultLampInd 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_FaultLampInd 0;
+BA_ "GenSigSendType" SG_ 882 DCU_FaultLampInd 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_FaultLampInd 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_FaultLampInd 0;
+BA_ "Remark" SG_ 882 DCU_FaultLampInd "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_FaultLampInd 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_CooltReq 63;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_CooltReq 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_CooltReq 0;
+BA_ "GenSigSendType" SG_ 882 DCU_CooltReq 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_CooltReq 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_CooltReq 0;
+BA_ "Remark" SG_ 882 DCU_CooltReq "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_CooltReq 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_RotTemp 510;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_RotTemp 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_RotTemp 0;
+BA_ "GenSigSendType" SG_ 882 DCU_RotTemp 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_RotTemp 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_RotTemp 0;
+BA_ "Remark" SG_ 882 DCU_RotTemp "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_RotTemp 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_SysTempOvrInd 0;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_SysTempOvrInd 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_SysTempOvrInd 0;
+BA_ "GenSigSendType" SG_ 882 DCU_SysTempOvrInd 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_SysTempOvrInd 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_SysTempOvrInd 0;
+BA_ "Remark" SG_ 882 DCU_SysTempOvrInd "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_SysTempOvrInd 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_VoltageT30 0;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_VoltageT30 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_VoltageT30 0;
+BA_ "GenSigSendType" SG_ 882 DCU_VoltageT30 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_VoltageT30 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_VoltageT30 0;
+BA_ "Remark" SG_ 882 DCU_VoltageT30 "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_VoltageT30 0;
+BA_ "GenSigStartValue" SG_ 882 DCU_InvtTemp 254;
+BA_ "GenSigInvalidValue" SG_ 882 DCU_InvtTemp 0;
+BA_ "GenSigInactiveValue" SG_ 882 DCU_InvtTemp 0;
+BA_ "GenSigSendType" SG_ 882 DCU_InvtTemp 1;
+BA_ "GatewayedSignals" SG_ 882 DCU_InvtTemp 0;
+BA_ "EventCommandSignal" SG_ 882 DCU_InvtTemp 0;
+BA_ "Remark" SG_ 882 DCU_InvtTemp "";
+BA_ "GenSigTimeoutValue" SG_ 882 DCU_InvtTemp 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_3_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_3_Checksum 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_3_Checksum 0;
+BA_ "GenSigSendType" SG_ 385 DCU_3_Checksum 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_3_Checksum 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_3_Checksum 0;
+BA_ "Remark" SG_ 385 DCU_3_Checksum "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_3_Checksum 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_DiagErrCode 0;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_DiagErrCode 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_DiagErrCode 0;
+BA_ "GenSigSendType" SG_ 385 DCU_DiagErrCode 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_DiagErrCode 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_DiagErrCode 0;
+BA_ "Remark" SG_ 385 DCU_DiagErrCode "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_DiagErrCode 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_GateDrvSt 0;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_GateDrvSt 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_GateDrvSt 0;
+BA_ "GenSigSendType" SG_ 385 DCU_GateDrvSt 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_GateDrvSt 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_GateDrvSt 0;
+BA_ "Remark" SG_ 385 DCU_GateDrvSt "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_GateDrvSt 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_DstActive 0;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_DstActive 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_DstActive 0;
+BA_ "GenSigSendType" SG_ 385 DCU_DstActive 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_DstActive 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_DstActive 0;
+BA_ "Remark" SG_ 385 DCU_DstActive "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_DstActive 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_3_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_3_MsgCounter 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_3_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 385 DCU_3_MsgCounter 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_3_MsgCounter 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_3_MsgCounter 0;
+BA_ "Remark" SG_ 385 DCU_3_MsgCounter "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_3_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_stTrqEmMin 0;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_stTrqEmMin 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_stTrqEmMin 0;
+BA_ "GenSigSendType" SG_ 385 DCU_stTrqEmMin 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_stTrqEmMin 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_stTrqEmMin 0;
+BA_ "Remark" SG_ 385 DCU_stTrqEmMin "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_stTrqEmMin 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_TrqWoDstC 1023;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_TrqWoDstC 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_TrqWoDstC 0;
+BA_ "GenSigSendType" SG_ 385 DCU_TrqWoDstC 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_TrqWoDstC 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_TrqWoDstC 0;
+BA_ "Remark" SG_ 385 DCU_TrqWoDstC "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_TrqWoDstC 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_stTrqEmMax 0;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_stTrqEmMax 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_stTrqEmMax 0;
+BA_ "GenSigSendType" SG_ 385 DCU_stTrqEmMax 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_stTrqEmMax 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_stTrqEmMax 0;
+BA_ "Remark" SG_ 385 DCU_stTrqEmMax "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_stTrqEmMax 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_HvilSt 0;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_HvilSt 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_HvilSt 0;
+BA_ "GenSigSendType" SG_ 385 DCU_HvilSt 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_HvilSt 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_HvilSt 0;
+BA_ "Remark" SG_ 385 DCU_HvilSt "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_HvilSt 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_TorqMin 1023;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_TorqMin 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_TorqMin 0;
+BA_ "GenSigSendType" SG_ 385 DCU_TorqMin 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_TorqMin 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_TorqMin 0;
+BA_ "Remark" SG_ 385 DCU_TorqMin "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_TorqMin 0;
+BA_ "GenSigStartValue" SG_ 385 DCU_TorqMax 0;
+BA_ "GenSigInvalidValue" SG_ 385 DCU_TorqMax 0;
+BA_ "GenSigInactiveValue" SG_ 385 DCU_TorqMax 0;
+BA_ "GenSigSendType" SG_ 385 DCU_TorqMax 1;
+BA_ "GatewayedSignals" SG_ 385 DCU_TorqMax 0;
+BA_ "EventCommandSignal" SG_ 385 DCU_TorqMax 0;
+BA_ "Remark" SG_ 385 DCU_TorqMax "";
+BA_ "GenSigTimeoutValue" SG_ 385 DCU_TorqMax 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_2_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_2_Checksum 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_2_Checksum 0;
+BA_ "GenSigSendType" SG_ 377 DCU_2_Checksum 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_2_Checksum 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_2_Checksum 0;
+BA_ "Remark" SG_ 377 DCU_2_Checksum "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_2_Checksum 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_OffsetCalInd 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_OffsetCalInd 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_OffsetCalInd 0;
+BA_ "GenSigSendType" SG_ 377 DCU_OffsetCalInd 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_OffsetCalInd 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_OffsetCalInd 0;
+BA_ "Remark" SG_ 377 DCU_OffsetCalInd "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_OffsetCalInd 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_bReadyHV 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_bReadyHV 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_bReadyHV 0;
+BA_ "GenSigSendType" SG_ 377 DCU_bReadyHV 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_bReadyHV 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_bReadyHV 0;
+BA_ "Remark" SG_ 377 DCU_bReadyHV "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_bReadyHV 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_bDiagReq 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_bDiagReq 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_bDiagReq 0;
+BA_ "GenSigSendType" SG_ 377 DCU_bDiagReq 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_bDiagReq 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_bDiagReq 0;
+BA_ "Remark" SG_ 377 DCU_bDiagReq "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_bDiagReq 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_2_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_2_MsgCounter 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_2_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 377 DCU_2_MsgCounter 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_2_MsgCounter 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_2_MsgCounter 0;
+BA_ "Remark" SG_ 377 DCU_2_MsgCounter "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_2_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_Fault5 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_Fault5 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_Fault5 0;
+BA_ "GenSigSendType" SG_ 377 DCU_Fault5 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_Fault5 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_Fault5 0;
+BA_ "Remark" SG_ 377 DCU_Fault5 "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_Fault5 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_DiagState 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_DiagState 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_DiagState 0;
+BA_ "GenSigSendType" SG_ 377 DCU_DiagState 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_DiagState 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_DiagState 0;
+BA_ "Remark" SG_ 377 DCU_DiagState "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_DiagState 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_ErrLvl 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_ErrLvl 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_ErrLvl 0;
+BA_ "GenSigSendType" SG_ 377 DCU_ErrLvl 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_ErrLvl 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_ErrLvl 0;
+BA_ "Remark" SG_ 377 DCU_ErrLvl "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_ErrLvl 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_IsgDeratSts 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_IsgDeratSts 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_IsgDeratSts 0;
+BA_ "GenSigSendType" SG_ 377 DCU_IsgDeratSts 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_IsgDeratSts 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_IsgDeratSts 0;
+BA_ "Remark" SG_ 377 DCU_IsgDeratSts "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_IsgDeratSts 0;
+BA_ "GenSigStartValue" SG_ 377 DCU_DispDiagInfo 0;
+BA_ "GenSigInvalidValue" SG_ 377 DCU_DispDiagInfo 0;
+BA_ "GenSigInactiveValue" SG_ 377 DCU_DispDiagInfo 0;
+BA_ "GenSigSendType" SG_ 377 DCU_DispDiagInfo 1;
+BA_ "GatewayedSignals" SG_ 377 DCU_DispDiagInfo 0;
+BA_ "EventCommandSignal" SG_ 377 DCU_DispDiagInfo 0;
+BA_ "Remark" SG_ 377 DCU_DispDiagInfo "";
+BA_ "GenSigTimeoutValue" SG_ 377 DCU_DispDiagInfo 0;
+BA_ "GenSigStartValue" SG_ 369 DCU_1_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 369 DCU_1_Checksum 0;
+BA_ "GenSigInactiveValue" SG_ 369 DCU_1_Checksum 0;
+BA_ "GenSigSendType" SG_ 369 DCU_1_Checksum 1;
+BA_ "GatewayedSignals" SG_ 369 DCU_1_Checksum 0;
+BA_ "EventCommandSignal" SG_ 369 DCU_1_Checksum 0;
+BA_ "Remark" SG_ 369 DCU_1_Checksum "";
+BA_ "GenSigTimeoutValue" SG_ 369 DCU_1_Checksum 0;
+BA_ "GenSigStartValue" SG_ 369 DCU_ModeSt 1;
+BA_ "GenSigInvalidValue" SG_ 369 DCU_ModeSt 0;
+BA_ "GenSigInactiveValue" SG_ 369 DCU_ModeSt 0;
+BA_ "GenSigSendType" SG_ 369 DCU_ModeSt 1;
+BA_ "GatewayedSignals" SG_ 369 DCU_ModeSt 0;
+BA_ "EventCommandSignal" SG_ 369 DCU_ModeSt 0;
+BA_ "Remark" SG_ 369 DCU_ModeSt "";
+BA_ "GenSigTimeoutValue" SG_ 369 DCU_ModeSt 0;
+BA_ "GenSigStartValue" SG_ 369 DCU_1_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 369 DCU_1_MsgCounter 0;
+BA_ "GenSigInactiveValue" SG_ 369 DCU_1_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 369 DCU_1_MsgCounter 1;
+BA_ "GatewayedSignals" SG_ 369 DCU_1_MsgCounter 0;
+BA_ "EventCommandSignal" SG_ 369 DCU_1_MsgCounter 0;
+BA_ "Remark" SG_ 369 DCU_1_MsgCounter "";
+BA_ "GenSigTimeoutValue" SG_ 369 DCU_1_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 369 DCU_TorqAct 2046;
+BA_ "GenSigInvalidValue" SG_ 369 DCU_TorqAct 0;
+BA_ "GenSigInactiveValue" SG_ 369 DCU_TorqAct 0;
+BA_ "GenSigSendType" SG_ 369 DCU_TorqAct 1;
+BA_ "GatewayedSignals" SG_ 369 DCU_TorqAct 1;
+BA_ "EventCommandSignal" SG_ 369 DCU_TorqAct 0;
+BA_ "Remark" SG_ 369 DCU_TorqAct "";
+BA_ "GenSigTimeoutValue" SG_ 369 DCU_TorqAct 0;
+BA_ "GenSigStartValue" SG_ 369 DCU_UdcAct 1022;
+BA_ "GenSigInvalidValue" SG_ 369 DCU_UdcAct 0;
+BA_ "GenSigInactiveValue" SG_ 369 DCU_UdcAct 0;
+BA_ "GenSigSendType" SG_ 369 DCU_UdcAct 1;
+BA_ "GatewayedSignals" SG_ 369 DCU_UdcAct 0;
+BA_ "EventCommandSignal" SG_ 369 DCU_UdcAct 0;
+BA_ "Remark" SG_ 369 DCU_UdcAct "";
+BA_ "GenSigTimeoutValue" SG_ 369 DCU_UdcAct 0;
+BA_ "GenSigStartValue" SG_ 369 DCU_IdcAct 2046;
+BA_ "GenSigInvalidValue" SG_ 369 DCU_IdcAct 0;
+BA_ "GenSigInactiveValue" SG_ 369 DCU_IdcAct 0;
+BA_ "GenSigSendType" SG_ 369 DCU_IdcAct 1;
+BA_ "GatewayedSignals" SG_ 369 DCU_IdcAct 0;
+BA_ "EventCommandSignal" SG_ 369 DCU_IdcAct 0;
+BA_ "Remark" SG_ 369 DCU_IdcAct "";
+BA_ "GenSigTimeoutValue" SG_ 369 DCU_IdcAct 0;
+BA_ "GenSigStartValue" SG_ 369 DCU_RotSpdAct 65534;
+BA_ "GenSigInvalidValue" SG_ 369 DCU_RotSpdAct 0;
+BA_ "GenSigInactiveValue" SG_ 369 DCU_RotSpdAct 0;
+BA_ "GenSigSendType" SG_ 369 DCU_RotSpdAct 1;
+BA_ "GatewayedSignals" SG_ 369 DCU_RotSpdAct 0;
+BA_ "EventCommandSignal" SG_ 369 DCU_RotSpdAct 0;
+BA_ "Remark" SG_ 369 DCU_RotSpdAct "";
+BA_ "GenSigTimeoutValue" SG_ 369 DCU_RotSpdAct 0;
+VAL_ 3221225472 DCU_MotTempOvrErr 0 " No error;" 1 " Error;" ;
+VAL_ 3221225472 DCU_ECUTempOvrErr 0 " No error;" 1 " Error;" ;
+VAL_ 633 EMS_EngSpdVD 1 "Valid" 0 "Not valid" ;
+VAL_ 822 EMS_EngWaterTempVD 1 "Valid" 0 "Not valid" ;
+VAL_ 822 EMS_OBDWarmUpCycleSt 1 " True;" 0 " False;" ;
+VAL_ 878 EMS_MTValvePINDiagFault 0 " Short circuit to ground;" 1 " Open load;" 2 " Overload, SCB or OT;" 3 " Power stage o.k.;" ;
+VAL_ 878 EMS_VCU_MTValveReqSt 1 " Request;" 0 " No request;" ;
+VAL_ 678 BMS_PwrDwnReq 0 " NotRequest;" 1 " Request;" ;
+VAL_ 678 BMS_DCUBattSt 0 " HVBattCntctr_Open;" 1 " HVBattCntctr_Closed;" ;
+VAL_ 885 BCM_KeySt 3 "Crank                                " 2 "On" 1 "Acc" 0 "Off" ;
+VAL_ 750 VCU_DriveCycleSt 3 " Rserved;" 2 " Rserved;" 1 "Next cycle" 0 "Current cycle" ;
+VAL_ 750 VCU_SubEngWarmUPCycle 1 "True" 0 "False" ;
+VAL_ 442 VCU_ClutchEngagedSt 0 " Clutch Disengaged;" 1 " Clutch Slipping (before engage);" 2 " Clutch Engaged;" 3 " Clutch Slipping (after engage);" ;
+VAL_ 680 VCU_GMC3To2ValvePINDiagFaultSt 0 " Short circuit to ground;" 1 " Open load;" 2 " Overload, SCB or OT;" 3 " Power stage o.k.;" ;
+VAL_ 438 VCU_DCU_DampReq 0 " Enable;" 1 "Disable;" ;
+VAL_ 438 VCU_DCU_DampGain 3 " Default value;" 2 " High damping;" 1 " Medium damping;" 0 " Low damping;" ;
+VAL_ 438 VCU_DCU_TorqAllwd 3 " All Propulsive and Regenerative;" 2 " Regenerative torque allowed;" 1 " Propulsive torque allowed;" 0 " No torque allowed;" ;
+VAL_ 608 BCS_VehSpdVD 1 "Valid" 0 "Not Valid" ;
+VAL_ 882 DCU_RepairInd 0 " No repair;" 1 " Reapair recommendation;" ;
+VAL_ 882 DCU_Debug_MotTempOvrErr 0 " No error;" 1 " Error;" ;
+VAL_ 882 DCU_Debug_InvtTempOvrErr 0 " No error;" 1 " Error;" ;
+VAL_ 882 DCU_EngMilLampReq 0 " No request;" 1 " Request;" ;
+VAL_ 882 DCU_FaultLampInd 0 " Lamp off;" 1 " Lamp on;" ;
+VAL_ 882 DCU_SysTempOvrInd 0 " Lamp off;" 1 " Lamp on;" ;
+VAL_ 385 DCU_GateDrvSt 0 " FreeWheel;" 1 " PWMrun;" 2 " Discharge;" 3 " ShortCircuit;" ;
+VAL_ 385 DCU_DstActive 0 " No Active;" 1 " Active;" ;
+VAL_ 385 DCU_HvilSt 3 " failure;" 2 " HVIL is interrupted;" 1 " HVIL is closed;" 0 " HVIL generator is ready but HVIL result is not available;" ;
+VAL_ 377 DCU_OffsetCalInd 0 " Default / nok;" 1 " Calibration succeeded;" ;
+VAL_ 377 DCU_bReadyHV 0 " No Active;" 1 " Active;" ;
+VAL_ 377 DCU_bDiagReq 0 " No Active;" 1 " Active;" ;
+
